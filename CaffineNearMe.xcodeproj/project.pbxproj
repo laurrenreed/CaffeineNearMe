@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8903678B1C2A1EC00019A1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903678A1C2A1EC00019A1AF /* main.m */; };
+		8903678E1C2A1EC00019A1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903678D1C2A1EC00019A1AF /* AppDelegate.m */; };
+		890367941C2A1EC00019A1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890367921C2A1EC00019A1AF /* Main.storyboard */; };
+		890367961C2A1EC00019A1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890367951C2A1EC00019A1AF /* Assets.xcassets */; };
+		890367991C2A1EC00019A1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890367971C2A1EC00019A1AF /* LaunchScreen.storyboard */; };
+		890367A41C2A1EC00019A1AF /* CaffineNearMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367A31C2A1EC00019A1AF /* CaffineNearMeTests.m */; };
+		890367AF1C2A1EC00019A1AF /* CaffineNearMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367AE1C2A1EC00019A1AF /* CaffineNearMeUITests.m */; };
+		890367BE1C2A1FC50019A1AF /* LERConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367BD1C2A1FC50019A1AF /* LERConstants.m */; };
+		890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367C01C2A1FD70019A1AF /* LERHomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		890367A01C2A1EC00019A1AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8903677E1C2A1EC00019A1AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 890367851C2A1EC00019A1AF;
+			remoteInfo = CaffineNearMe;
+		};
+		890367AB1C2A1EC00019A1AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8903677E1C2A1EC00019A1AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 890367851C2A1EC00019A1AF;
+			remoteInfo = CaffineNearMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		890367861C2A1EC00019A1AF /* CaffineNearMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaffineNearMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8903678A1C2A1EC00019A1AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8903678C1C2A1EC00019A1AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8903678D1C2A1EC00019A1AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		890367931C2A1EC00019A1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		890367951C2A1EC00019A1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		890367981C2A1EC00019A1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8903679A1C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8903679F1C2A1EC00019A1AF /* CaffineNearMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffineNearMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890367A31C2A1EC00019A1AF /* CaffineNearMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffineNearMeTests.m; sourceTree = "<group>"; };
+		890367A51C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		890367AA1C2A1EC00019A1AF /* CaffineNearMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffineNearMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890367AE1C2A1EC00019A1AF /* CaffineNearMeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffineNearMeUITests.m; sourceTree = "<group>"; };
+		890367B01C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		890367BC1C2A1FC50019A1AF /* LERConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERConstants.h; sourceTree = "<group>"; };
+		890367BD1C2A1FC50019A1AF /* LERConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERConstants.m; sourceTree = "<group>"; };
+		890367BF1C2A1FD70019A1AF /* LERHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERHomeViewController.h; sourceTree = "<group>"; };
+		890367C01C2A1FD70019A1AF /* LERHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERHomeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		890367831C2A1EC00019A1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8903679C1C2A1EC00019A1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890367A71C2A1EC00019A1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8903677D1C2A1EC00019A1AF = {
+			isa = PBXGroup;
+			children = (
+				890367881C2A1EC00019A1AF /* CaffineNearMe */,
+				890367A21C2A1EC00019A1AF /* CaffineNearMeTests */,
+				890367AD1C2A1EC00019A1AF /* CaffineNearMeUITests */,
+				890367871C2A1EC00019A1AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		890367871C2A1EC00019A1AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				890367861C2A1EC00019A1AF /* CaffineNearMe.app */,
+				8903679F1C2A1EC00019A1AF /* CaffineNearMeTests.xctest */,
+				890367AA1C2A1EC00019A1AF /* CaffineNearMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		890367881C2A1EC00019A1AF /* CaffineNearMe */ = {
+			isa = PBXGroup;
+			children = (
+				8903678C1C2A1EC00019A1AF /* AppDelegate.h */,
+				8903678D1C2A1EC00019A1AF /* AppDelegate.m */,
+				890367BF1C2A1FD70019A1AF /* LERHomeViewController.h */,
+				890367C01C2A1FD70019A1AF /* LERHomeViewController.m */,
+				890367921C2A1EC00019A1AF /* Main.storyboard */,
+				890367971C2A1EC00019A1AF /* LaunchScreen.storyboard */,
+				8903679A1C2A1EC00019A1AF /* Info.plist */,
+				890367891C2A1EC00019A1AF /* Supporting Files */,
+			);
+			path = CaffineNearMe;
+			sourceTree = "<group>";
+		};
+		890367891C2A1EC00019A1AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				890367951C2A1EC00019A1AF /* Assets.xcassets */,
+				890367BC1C2A1FC50019A1AF /* LERConstants.h */,
+				890367BD1C2A1FC50019A1AF /* LERConstants.m */,
+				8903678A1C2A1EC00019A1AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		890367A21C2A1EC00019A1AF /* CaffineNearMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				890367A31C2A1EC00019A1AF /* CaffineNearMeTests.m */,
+				890367A51C2A1EC00019A1AF /* Info.plist */,
+			);
+			path = CaffineNearMeTests;
+			sourceTree = "<group>";
+		};
+		890367AD1C2A1EC00019A1AF /* CaffineNearMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				890367AE1C2A1EC00019A1AF /* CaffineNearMeUITests.m */,
+				890367B01C2A1EC00019A1AF /* Info.plist */,
+			);
+			path = CaffineNearMeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		890367851C2A1EC00019A1AF /* CaffineNearMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890367B31C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMe" */;
+			buildPhases = (
+				890367821C2A1EC00019A1AF /* Sources */,
+				890367831C2A1EC00019A1AF /* Frameworks */,
+				890367841C2A1EC00019A1AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaffineNearMe;
+			productName = CaffineNearMe;
+			productReference = 890367861C2A1EC00019A1AF /* CaffineNearMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8903679E1C2A1EC00019A1AF /* CaffineNearMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890367B61C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeTests" */;
+			buildPhases = (
+				8903679B1C2A1EC00019A1AF /* Sources */,
+				8903679C1C2A1EC00019A1AF /* Frameworks */,
+				8903679D1C2A1EC00019A1AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				890367A11C2A1EC00019A1AF /* PBXTargetDependency */,
+			);
+			name = CaffineNearMeTests;
+			productName = CaffineNearMeTests;
+			productReference = 8903679F1C2A1EC00019A1AF /* CaffineNearMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		890367A91C2A1EC00019A1AF /* CaffineNearMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890367B91C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeUITests" */;
+			buildPhases = (
+				890367A61C2A1EC00019A1AF /* Sources */,
+				890367A71C2A1EC00019A1AF /* Frameworks */,
+				890367A81C2A1EC00019A1AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				890367AC1C2A1EC00019A1AF /* PBXTargetDependency */,
+			);
+			name = CaffineNearMeUITests;
+			productName = CaffineNearMeUITests;
+			productReference = 890367AA1C2A1EC00019A1AF /* CaffineNearMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8903677E1C2A1EC00019A1AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Lauren Reed";
+				TargetAttributes = {
+					890367851C2A1EC00019A1AF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8903679E1C2A1EC00019A1AF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 890367851C2A1EC00019A1AF;
+					};
+					890367A91C2A1EC00019A1AF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 890367851C2A1EC00019A1AF;
+					};
+				};
+			};
+			buildConfigurationList = 890367811C2A1EC00019A1AF /* Build configuration list for PBXProject "CaffineNearMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8903677D1C2A1EC00019A1AF;
+			productRefGroup = 890367871C2A1EC00019A1AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				890367851C2A1EC00019A1AF /* CaffineNearMe */,
+				8903679E1C2A1EC00019A1AF /* CaffineNearMeTests */,
+				890367A91C2A1EC00019A1AF /* CaffineNearMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		890367841C2A1EC00019A1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890367991C2A1EC00019A1AF /* LaunchScreen.storyboard in Resources */,
+				890367961C2A1EC00019A1AF /* Assets.xcassets in Resources */,
+				890367941C2A1EC00019A1AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8903679D1C2A1EC00019A1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890367A81C2A1EC00019A1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		890367821C2A1EC00019A1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8903678E1C2A1EC00019A1AF /* AppDelegate.m in Sources */,
+				890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */,
+				890367BE1C2A1FC50019A1AF /* LERConstants.m in Sources */,
+				8903678B1C2A1EC00019A1AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8903679B1C2A1EC00019A1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890367A41C2A1EC00019A1AF /* CaffineNearMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890367A61C2A1EC00019A1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890367AF1C2A1EC00019A1AF /* CaffineNearMeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		890367A11C2A1EC00019A1AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 890367851C2A1EC00019A1AF /* CaffineNearMe */;
+			targetProxy = 890367A01C2A1EC00019A1AF /* PBXContainerItemProxy */;
+		};
+		890367AC1C2A1EC00019A1AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 890367851C2A1EC00019A1AF /* CaffineNearMe */;
+			targetProxy = 890367AB1C2A1EC00019A1AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		890367921C2A1EC00019A1AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				890367931C2A1EC00019A1AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		890367971C2A1EC00019A1AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				890367981C2A1EC00019A1AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		890367B11C2A1EC00019A1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		890367B21C2A1EC00019A1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		890367B41C2A1EC00019A1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CaffineNearMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		890367B51C2A1EC00019A1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CaffineNearMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		890367B71C2A1EC00019A1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaffineNearMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffineNearMe.app/CaffineNearMe";
+			};
+			name = Debug;
+		};
+		890367B81C2A1EC00019A1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaffineNearMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffineNearMe.app/CaffineNearMe";
+			};
+			name = Release;
+		};
+		890367BA1C2A1EC00019A1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CaffineNearMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CaffineNearMe;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		890367BB1C2A1EC00019A1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CaffineNearMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CaffineNearMe;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		890367811C2A1EC00019A1AF /* Build configuration list for PBXProject "CaffineNearMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890367B11C2A1EC00019A1AF /* Debug */,
+				890367B21C2A1EC00019A1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		890367B31C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890367B41C2A1EC00019A1AF /* Debug */,
+				890367B51C2A1EC00019A1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		890367B61C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890367B71C2A1EC00019A1AF /* Debug */,
+				890367B81C2A1EC00019A1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		890367B91C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890367BA1C2A1EC00019A1AF /* Debug */,
+				890367BB1C2A1EC00019A1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8903677E1C2A1EC00019A1AF /* Project object */;
+}
