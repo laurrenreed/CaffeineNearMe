@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LERConstants.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Foursquare2 setupFoursquareWithClientId:FOURSQUARE_CLIENT_ID
+                                      secret:FOURSQUARE_CLIENT_SECRET
+                                 callbackURL:@"com.flatironschool"];
+    
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [Foursquare2 handleURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

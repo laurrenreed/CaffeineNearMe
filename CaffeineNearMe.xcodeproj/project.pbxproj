@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A10E3990D4387A4445D9E83 /* libPods-CaffineNearMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE5A3D18717186A3AE0396B /* libPods-CaffineNearMe.a */; };
 		8903678B1C2A1EC00019A1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903678A1C2A1EC00019A1AF /* main.m */; };
 		8903678E1C2A1EC00019A1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903678D1C2A1EC00019A1AF /* AppDelegate.m */; };
 		890367941C2A1EC00019A1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890367921C2A1EC00019A1AF /* Main.storyboard */; };
 		890367961C2A1EC00019A1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890367951C2A1EC00019A1AF /* Assets.xcassets */; };
 		890367991C2A1EC00019A1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890367971C2A1EC00019A1AF /* LaunchScreen.storyboard */; };
-		890367A41C2A1EC00019A1AF /* CaffineNearMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367A31C2A1EC00019A1AF /* CaffineNearMeTests.m */; };
-		890367AF1C2A1EC00019A1AF /* CaffineNearMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367AE1C2A1EC00019A1AF /* CaffineNearMeUITests.m */; };
-		890367BE1C2A1FC50019A1AF /* LERConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367BD1C2A1FC50019A1AF /* LERConstants.m */; };
+		890367A41C2A1EC00019A1AF /* CaffeineNearMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367A31C2A1EC00019A1AF /* CaffeineNearMeTests.m */; };
+		890367AF1C2A1EC00019A1AF /* CaffeineNearMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367AE1C2A1EC00019A1AF /* CaffeineNearMeUITests.m */; };
 		890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367C01C2A1FD70019A1AF /* LERHomeViewController.m */; };
+		8952A5C91C38C0190008312F /* LERCoffeeShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */; };
+		89ADB3861C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADB3851C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m */; };
+		89ADB38D1C3861210024DAD4 /* LERConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADB38C1C3861210024DAD4 /* LERConstants.m */; };
+		89ADB3901C3864D90024DAD4 /* LERMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADB38F1C3864D90024DAD4 /* LERMapViewController.m */; };
+		89ADB3971C386B2B0024DAD4 /* LERCustomListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADB3951C386B2A0024DAD4 /* LERCustomListCellTableViewCell.m */; };
+		89ADB3981C386B2B0024DAD4 /* LERCustomListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ADB3961C386B2A0024DAD4 /* LERCustomListCellTableViewCell.xib */; };
+		89ADB39A1C386DA80024DAD4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ADB3991C386DA80024DAD4 /* CoreLocation.framework */; };
+		89ADB39C1C386DAE0024DAD4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ADB39B1C386DAE0024DAD4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		890367861C2A1EC00019A1AF /* CaffineNearMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaffineNearMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F675D0794A718FE29BB573C /* Pods-CaffineNearMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffineNearMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaffineNearMe/Pods-CaffineNearMe.release.xcconfig"; sourceTree = "<group>"; };
+		890367861C2A1EC00019A1AF /* CaffeineNearMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaffeineNearMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8903678A1C2A1EC00019A1AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8903678C1C2A1EC00019A1AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8903678D1C2A1EC00019A1AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,16 +53,29 @@
 		890367951C2A1EC00019A1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		890367981C2A1EC00019A1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8903679A1C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8903679F1C2A1EC00019A1AF /* CaffineNearMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffineNearMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		890367A31C2A1EC00019A1AF /* CaffineNearMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffineNearMeTests.m; sourceTree = "<group>"; };
+		8903679F1C2A1EC00019A1AF /* CaffeineNearMe.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffeineNearMe.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890367A31C2A1EC00019A1AF /* CaffeineNearMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffeineNearMeTests.m; sourceTree = "<group>"; };
 		890367A51C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		890367AA1C2A1EC00019A1AF /* CaffineNearMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffineNearMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		890367AE1C2A1EC00019A1AF /* CaffineNearMeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffineNearMeUITests.m; sourceTree = "<group>"; };
+		890367AA1C2A1EC00019A1AF /* CaffeineNearMe.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffeineNearMe.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890367AE1C2A1EC00019A1AF /* CaffeineNearMeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffeineNearMeUITests.m; sourceTree = "<group>"; };
 		890367B01C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		890367BC1C2A1FC50019A1AF /* LERConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERConstants.h; sourceTree = "<group>"; };
-		890367BD1C2A1FC50019A1AF /* LERConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERConstants.m; sourceTree = "<group>"; };
 		890367BF1C2A1FD70019A1AF /* LERHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERHomeViewController.h; sourceTree = "<group>"; };
 		890367C01C2A1FD70019A1AF /* LERHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERHomeViewController.m; sourceTree = "<group>"; };
+		8952A5C71C38C0190008312F /* LERCoffeeShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCoffeeShopViewController.h; sourceTree = "<group>"; };
+		8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCoffeeShopViewController.m; sourceTree = "<group>"; };
+		89ADB3841C3860C10024DAD4 /* LERCustomTabBarControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCustomTabBarControllerViewController.h; sourceTree = "<group>"; };
+		89ADB3851C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCustomTabBarControllerViewController.m; sourceTree = "<group>"; };
+		89ADB38B1C3861210024DAD4 /* LERConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LERConstants.h; path = ../LERConstants.h; sourceTree = "<group>"; };
+		89ADB38C1C3861210024DAD4 /* LERConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LERConstants.m; path = ../LERConstants.m; sourceTree = "<group>"; };
+		89ADB38E1C3864D90024DAD4 /* LERMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERMapViewController.h; sourceTree = "<group>"; };
+		89ADB38F1C3864D90024DAD4 /* LERMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERMapViewController.m; sourceTree = "<group>"; };
+		89ADB3941C386B2A0024DAD4 /* LERCustomListCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCustomListCellTableViewCell.h; sourceTree = "<group>"; };
+		89ADB3951C386B2A0024DAD4 /* LERCustomListCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCustomListCellTableViewCell.m; sourceTree = "<group>"; };
+		89ADB3961C386B2A0024DAD4 /* LERCustomListCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LERCustomListCellTableViewCell.xib; sourceTree = "<group>"; };
+		89ADB3991C386DA80024DAD4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		89ADB39B1C386DAE0024DAD4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B07273868A0C23E829F8D2D6 /* Pods-CaffineNearMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffineNearMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaffineNearMe/Pods-CaffineNearMe.debug.xcconfig"; sourceTree = "<group>"; };
+		FEE5A3D18717186A3AE0396B /* libPods-CaffineNearMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaffineNearMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADB39C1C386DAE0024DAD4 /* MapKit.framework in Frameworks */,
+				89ADB39A1C386DA80024DAD4 /* CoreLocation.framework in Frameworks */,
+				5A10E3990D4387A4445D9E83 /* libPods-CaffineNearMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,38 +106,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CB8C75C64C84E12C73C9E0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89ADB39B1C386DAE0024DAD4 /* MapKit.framework */,
+				89ADB3991C386DA80024DAD4 /* CoreLocation.framework */,
+				FEE5A3D18717186A3AE0396B /* libPods-CaffineNearMe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8903677D1C2A1EC00019A1AF = {
 			isa = PBXGroup;
 			children = (
-				890367881C2A1EC00019A1AF /* CaffineNearMe */,
-				890367A21C2A1EC00019A1AF /* CaffineNearMeTests */,
-				890367AD1C2A1EC00019A1AF /* CaffineNearMeUITests */,
+				890367881C2A1EC00019A1AF /* CaffeineNearMe */,
+				890367A21C2A1EC00019A1AF /* CaffeineNearMeTests */,
+				890367AD1C2A1EC00019A1AF /* CaffeineNearMeUITests */,
 				890367871C2A1EC00019A1AF /* Products */,
+				E8A70711229553F5BCD3A4F9 /* Pods */,
+				5CB8C75C64C84E12C73C9E0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		890367871C2A1EC00019A1AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				890367861C2A1EC00019A1AF /* CaffineNearMe.app */,
-				8903679F1C2A1EC00019A1AF /* CaffineNearMeTests.xctest */,
-				890367AA1C2A1EC00019A1AF /* CaffineNearMeUITests.xctest */,
+				890367861C2A1EC00019A1AF /* CaffeineNearMe.app */,
+				8903679F1C2A1EC00019A1AF /* CaffeineNearMe.xctest */,
+				890367AA1C2A1EC00019A1AF /* CaffeineNearMe.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		890367881C2A1EC00019A1AF /* CaffineNearMe */ = {
+		890367881C2A1EC00019A1AF /* CaffeineNearMe */ = {
 			isa = PBXGroup;
 			children = (
 				8903678C1C2A1EC00019A1AF /* AppDelegate.h */,
 				8903678D1C2A1EC00019A1AF /* AppDelegate.m */,
+				890367921C2A1EC00019A1AF /* Main.storyboard */,
 				890367BF1C2A1FD70019A1AF /* LERHomeViewController.h */,
 				890367C01C2A1FD70019A1AF /* LERHomeViewController.m */,
-				890367921C2A1EC00019A1AF /* Main.storyboard */,
+				89ADB38E1C3864D90024DAD4 /* LERMapViewController.h */,
+				89ADB38F1C3864D90024DAD4 /* LERMapViewController.m */,
+				8952A5C71C38C0190008312F /* LERCoffeeShopViewController.h */,
+				8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */,
+				89ADB3841C3860C10024DAD4 /* LERCustomTabBarControllerViewController.h */,
+				89ADB3851C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m */,
+				89ADB3961C386B2A0024DAD4 /* LERCustomListCellTableViewCell.xib */,
+				89ADB3941C386B2A0024DAD4 /* LERCustomListCellTableViewCell.h */,
+				89ADB3951C386B2A0024DAD4 /* LERCustomListCellTableViewCell.m */,
 				890367971C2A1EC00019A1AF /* LaunchScreen.storyboard */,
 				8903679A1C2A1EC00019A1AF /* Info.plist */,
 				890367891C2A1EC00019A1AF /* Supporting Files */,
 			);
+			name = CaffeineNearMe;
 			path = CaffineNearMe;
 			sourceTree = "<group>";
 		};
@@ -120,54 +167,68 @@
 			isa = PBXGroup;
 			children = (
 				890367951C2A1EC00019A1AF /* Assets.xcassets */,
-				890367BC1C2A1FC50019A1AF /* LERConstants.h */,
-				890367BD1C2A1FC50019A1AF /* LERConstants.m */,
+				89ADB38B1C3861210024DAD4 /* LERConstants.h */,
+				89ADB38C1C3861210024DAD4 /* LERConstants.m */,
 				8903678A1C2A1EC00019A1AF /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		890367A21C2A1EC00019A1AF /* CaffineNearMeTests */ = {
+		890367A21C2A1EC00019A1AF /* CaffeineNearMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				890367A31C2A1EC00019A1AF /* CaffineNearMeTests.m */,
+				890367A31C2A1EC00019A1AF /* CaffeineNearMeTests.m */,
 				890367A51C2A1EC00019A1AF /* Info.plist */,
 			);
+			name = CaffeineNearMeTests;
 			path = CaffineNearMeTests;
 			sourceTree = "<group>";
 		};
-		890367AD1C2A1EC00019A1AF /* CaffineNearMeUITests */ = {
+		890367AD1C2A1EC00019A1AF /* CaffeineNearMeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				890367AE1C2A1EC00019A1AF /* CaffineNearMeUITests.m */,
+				890367AE1C2A1EC00019A1AF /* CaffeineNearMeUITests.m */,
 				890367B01C2A1EC00019A1AF /* Info.plist */,
 			);
+			name = CaffeineNearMeUITests;
 			path = CaffineNearMeUITests;
+			sourceTree = "<group>";
+		};
+		E8A70711229553F5BCD3A4F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B07273868A0C23E829F8D2D6 /* Pods-CaffineNearMe.debug.xcconfig */,
+				0F675D0794A718FE29BB573C /* Pods-CaffineNearMe.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		890367851C2A1EC00019A1AF /* CaffineNearMe */ = {
+		890367851C2A1EC00019A1AF /* CaffeineNearMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 890367B31C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMe" */;
+			buildConfigurationList = 890367B31C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffeineNearMe" */;
 			buildPhases = (
+				E0241EFC1160D06126DE19F7 /* Check Pods Manifest.lock */,
 				890367821C2A1EC00019A1AF /* Sources */,
 				890367831C2A1EC00019A1AF /* Frameworks */,
 				890367841C2A1EC00019A1AF /* Resources */,
+				ADC209EB72A9C285D71C3978 /* Embed Pods Frameworks */,
+				3B71F2B6AA96C2C4ED5B202A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CaffineNearMe;
+			name = CaffeineNearMe;
 			productName = CaffineNearMe;
-			productReference = 890367861C2A1EC00019A1AF /* CaffineNearMe.app */;
+			productReference = 890367861C2A1EC00019A1AF /* CaffeineNearMe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8903679E1C2A1EC00019A1AF /* CaffineNearMeTests */ = {
+		8903679E1C2A1EC00019A1AF /* CaffeineNearMeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 890367B61C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeTests" */;
+			buildConfigurationList = 890367B61C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffeineNearMeTests" */;
 			buildPhases = (
 				8903679B1C2A1EC00019A1AF /* Sources */,
 				8903679C1C2A1EC00019A1AF /* Frameworks */,
@@ -178,14 +239,14 @@
 			dependencies = (
 				890367A11C2A1EC00019A1AF /* PBXTargetDependency */,
 			);
-			name = CaffineNearMeTests;
+			name = CaffeineNearMeTests;
 			productName = CaffineNearMeTests;
-			productReference = 8903679F1C2A1EC00019A1AF /* CaffineNearMeTests.xctest */;
+			productReference = 8903679F1C2A1EC00019A1AF /* CaffeineNearMe.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		890367A91C2A1EC00019A1AF /* CaffineNearMeUITests */ = {
+		890367A91C2A1EC00019A1AF /* CaffeineNearMeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 890367B91C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeUITests" */;
+			buildConfigurationList = 890367B91C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffeineNearMeUITests" */;
 			buildPhases = (
 				890367A61C2A1EC00019A1AF /* Sources */,
 				890367A71C2A1EC00019A1AF /* Frameworks */,
@@ -196,9 +257,9 @@
 			dependencies = (
 				890367AC1C2A1EC00019A1AF /* PBXTargetDependency */,
 			);
-			name = CaffineNearMeUITests;
+			name = CaffeineNearMeUITests;
 			productName = CaffineNearMeUITests;
-			productReference = 890367AA1C2A1EC00019A1AF /* CaffineNearMeUITests.xctest */;
+			productReference = 890367AA1C2A1EC00019A1AF /* CaffeineNearMe.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +284,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 890367811C2A1EC00019A1AF /* Build configuration list for PBXProject "CaffineNearMe" */;
+			buildConfigurationList = 890367811C2A1EC00019A1AF /* Build configuration list for PBXProject "CaffeineNearMe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,9 +297,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				890367851C2A1EC00019A1AF /* CaffineNearMe */,
-				8903679E1C2A1EC00019A1AF /* CaffineNearMeTests */,
-				890367A91C2A1EC00019A1AF /* CaffineNearMeUITests */,
+				890367851C2A1EC00019A1AF /* CaffeineNearMe */,
+				8903679E1C2A1EC00019A1AF /* CaffeineNearMeTests */,
+				890367A91C2A1EC00019A1AF /* CaffeineNearMeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADB3981C386B2B0024DAD4 /* LERCustomListCellTableViewCell.xib in Resources */,
 				890367991C2A1EC00019A1AF /* LaunchScreen.storyboard in Resources */,
 				890367961C2A1EC00019A1AF /* Assets.xcassets in Resources */,
 				890367941C2A1EC00019A1AF /* Main.storyboard in Resources */,
@@ -270,6 +332,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B71F2B6AA96C2C4ED5B202A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaffineNearMe/Pods-CaffineNearMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC209EB72A9C285D71C3978 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaffineNearMe/Pods-CaffineNearMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0241EFC1160D06126DE19F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		890367821C2A1EC00019A1AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -277,7 +387,11 @@
 			files = (
 				8903678E1C2A1EC00019A1AF /* AppDelegate.m in Sources */,
 				890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */,
-				890367BE1C2A1FC50019A1AF /* LERConstants.m in Sources */,
+				89ADB3861C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m in Sources */,
+				89ADB3901C3864D90024DAD4 /* LERMapViewController.m in Sources */,
+				8952A5C91C38C0190008312F /* LERCoffeeShopViewController.m in Sources */,
+				89ADB38D1C3861210024DAD4 /* LERConstants.m in Sources */,
+				89ADB3971C386B2B0024DAD4 /* LERCustomListCellTableViewCell.m in Sources */,
 				8903678B1C2A1EC00019A1AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890367A41C2A1EC00019A1AF /* CaffineNearMeTests.m in Sources */,
+				890367A41C2A1EC00019A1AF /* CaffeineNearMeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890367AF1C2A1EC00019A1AF /* CaffineNearMeUITests.m in Sources */,
+				890367AF1C2A1EC00019A1AF /* CaffeineNearMeUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +417,12 @@
 /* Begin PBXTargetDependency section */
 		890367A11C2A1EC00019A1AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 890367851C2A1EC00019A1AF /* CaffineNearMe */;
+			target = 890367851C2A1EC00019A1AF /* CaffeineNearMe */;
 			targetProxy = 890367A01C2A1EC00019A1AF /* PBXContainerItemProxy */;
 		};
 		890367AC1C2A1EC00019A1AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 890367851C2A1EC00019A1AF /* CaffineNearMe */;
+			target = 890367851C2A1EC00019A1AF /* CaffeineNearMe */;
 			targetProxy = 890367AB1C2A1EC00019A1AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,23 +529,25 @@
 		};
 		890367B41C2A1EC00019A1AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07273868A0C23E829F8D2D6 /* Pods-CaffineNearMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CaffineNearMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffeineNearMe;
+				PRODUCT_NAME = CaffeineNearMe;
 			};
 			name = Debug;
 		};
 		890367B51C2A1EC00019A1AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F675D0794A718FE29BB573C /* Pods-CaffineNearMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CaffineNearMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffeineNearMe;
+				PRODUCT_NAME = CaffeineNearMe;
 			};
 			name = Release;
 		};
@@ -442,8 +558,8 @@
 				INFOPLIST_FILE = CaffineNearMeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffineNearMe.app/CaffineNearMe";
+				PRODUCT_NAME = CaffeineNearMe;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffeineNearMe.app/CaffeineNearMe";
 			};
 			name = Debug;
 		};
@@ -454,8 +570,8 @@
 				INFOPLIST_FILE = CaffineNearMeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffineNearMe.app/CaffineNearMe";
+				PRODUCT_NAME = CaffeineNearMe;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffeineNearMe.app/CaffeineNearMe";
 			};
 			name = Release;
 		};
@@ -465,7 +581,7 @@
 				INFOPLIST_FILE = CaffineNearMeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CaffeineNearMe;
 				TEST_TARGET_NAME = CaffineNearMe;
 				USES_XCTRUNNER = YES;
 			};
@@ -477,7 +593,7 @@
 				INFOPLIST_FILE = CaffineNearMeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LER.CaffineNearMeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CaffeineNearMe;
 				TEST_TARGET_NAME = CaffineNearMe;
 				USES_XCTRUNNER = YES;
 			};
@@ -486,7 +602,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		890367811C2A1EC00019A1AF /* Build configuration list for PBXProject "CaffineNearMe" */ = {
+		890367811C2A1EC00019A1AF /* Build configuration list for PBXProject "CaffeineNearMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				890367B11C2A1EC00019A1AF /* Debug */,
@@ -495,29 +611,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		890367B31C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMe" */ = {
+		890367B31C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffeineNearMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				890367B41C2A1EC00019A1AF /* Debug */,
 				890367B51C2A1EC00019A1AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		890367B61C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeTests" */ = {
+		890367B61C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffeineNearMeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				890367B71C2A1EC00019A1AF /* Debug */,
 				890367B81C2A1EC00019A1AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		890367B91C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffineNearMeUITests" */ = {
+		890367B91C2A1EC00019A1AF /* Build configuration list for PBXNativeTarget "CaffeineNearMeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				890367BA1C2A1EC00019A1AF /* Debug */,
 				890367BB1C2A1EC00019A1AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,13 @@
+PODS:
+  - Foursquare-API-v2 (1.4.8)
+  - ionicons (2.0.3)
+
+DEPENDENCIES:
+  - Foursquare-API-v2 (~> 1.4.8)
+  - ionicons
+
+SPEC CHECKSUMS:
+  Foursquare-API-v2: dedba546a2048dc66dc444e9784fc5f9c27f81d9
+  ionicons: ec1e86e6c3316bd9942a7f024080dd75c70dd6a5
+
+COCOAPODS: 0.39.0
