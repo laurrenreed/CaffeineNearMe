@@ -25,6 +25,8 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [[UITabBar appearance] setBarTintColor:[UIColor lightGrayColor]];
+    
     UIImage *listViewIcon = [IonIcons imageWithIcon:ion_coffee
                                           iconColor:[UIColor grayColor]
                                            iconSize:40.0f

@@ -6,8 +6,10 @@
 //  Copyright © 2015 Lauren Reed. All rights reserved.
 //
 
+#import "LERCoffeeShop.h"
 #import "LERHomeViewController.h"
 #import "LERCustomListCellTableViewCell.h"
+#import "LERCoffeeShopViewController.h"
 
 @interface LERHomeViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
@@ -17,6 +19,8 @@
 @property (strong, nonatomic) CLLocation *location;
 @property (nonatomic, strong) CLLocation *lastUpdatedLocation;
 @property (nonatomic, strong) void (^locationCompletion)(CLLocation *location, BOOL success);
+@property (nonatomic, strong) LERCoffeeShop *selectedCoffeeShop;
+
 
 @end
 
@@ -51,7 +55,6 @@
         }];
                                       
     }];
-
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -63,10 +66,8 @@
 }
 
 - (void)sortArrayByDistance {
-    
     NSSortDescriptor *orderByDistance = [[NSSortDescriptor alloc] initWithKey:@"location.distance" ascending:YES];
     self.venues = [self.venues sortedArrayUsingDescriptors:[NSArray arrayWithObjects:orderByDistance, nil]];
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -86,9 +87,38 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"checkOutCoffeeShopDetail" sender:nil];
+}
+
+- (LERCoffeeShop *)makeDictionaryToCoffeeShopObject:(NSIndexPath *)selectedIndexPath {
+    self.selectedCoffeeShop = [LERCoffeeShop new];
+    
+    NSDictionary *venue = self.venues[selectedIndexPath.row];
+    
+    self.selectedCoffeeShop.name = venue[@"name"];
+    self.selectedCoffeeShop.formattedAddress = venue[@"location"][@"formattedAddress"];
+    self.selectedCoffeeShop.latitude = venue[@"location"][@"lat"];
+    self.selectedCoffeeShop.longitude = venue[@"location"][@"lng"];
+    NSString *webAddress = venue[@"url"];
+    self.selectedCoffeeShop.webAddress = [NSURL URLWithString:webAddress];
+    self.selectedCoffeeShop.activitySummary = venue[@"summary"];
+    self.selectedCoffeeShop.phoneNumber = venue[@"phone"];
+    self.selectedCoffeeShop.city = venue[@"location"][@"city"];
+    return self.selectedCoffeeShop;
+}
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([[segue identifier] isEqualToString:@"checkOutCoffeeShopDetail"]){
+        //         PGBChatMessageVC *chatViewController = (PGBChatMessageVC *)segue.destinationViewController;
+
+        LERCoffeeShopViewController *coffeeShopDetailViewController = (LERCoffeeShopViewController *)segue.destinationViewController;
+        
+        NSIndexPath *selectedIndexPath = self.coffeeShopListTableView.indexPathForSelectedRow;
+        [self makeDictionaryToCoffeeShopObject:selectedIndexPath];
+        coffeeShopDetailViewController.coffeeShopDetails = self.selectedCoffeeShop;
+    }
 }
 
 @end
