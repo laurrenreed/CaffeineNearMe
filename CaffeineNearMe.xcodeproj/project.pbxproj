@@ -10,11 +10,12 @@
 		5A10E3990D4387A4445D9E83 /* libPods-CaffineNearMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE5A3D18717186A3AE0396B /* libPods-CaffineNearMe.a */; };
 		8903678B1C2A1EC00019A1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903678A1C2A1EC00019A1AF /* main.m */; };
 		8903678E1C2A1EC00019A1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903678D1C2A1EC00019A1AF /* AppDelegate.m */; };
-		890367961C2A1EC00019A1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890367951C2A1EC00019A1AF /* Assets.xcassets */; };
 		890367991C2A1EC00019A1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890367971C2A1EC00019A1AF /* LaunchScreen.storyboard */; };
 		890367A41C2A1EC00019A1AF /* CaffeineNearMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367A31C2A1EC00019A1AF /* CaffeineNearMeTests.m */; };
 		890367AF1C2A1EC00019A1AF /* CaffeineNearMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367AE1C2A1EC00019A1AF /* CaffeineNearMeUITests.m */; };
 		890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367C01C2A1FD70019A1AF /* LERHomeViewController.m */; };
+		894C63DB1C3B1F75000A0C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894C63DA1C3B1F75000A0C4F /* Assets.xcassets */; };
+		894C63DE1C3B7DED000A0C4F /* LERCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 894C63DD1C3B7DED000A0C4F /* LERCustomAnnotation.m */; };
 		8952A5C91C38C0190008312F /* LERCoffeeShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */; };
 		8952A5CC1C3A23380008312F /* LERCoffeeShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952A5CB1C3A23380008312F /* LERCoffeeShop.m */; };
 		8952A5CE1C3A2BB30008312F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8952A5CD1C3A2BB30008312F /* Main.storyboard */; };
@@ -50,7 +51,6 @@
 		8903678A1C2A1EC00019A1AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8903678C1C2A1EC00019A1AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8903678D1C2A1EC00019A1AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		890367951C2A1EC00019A1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		890367981C2A1EC00019A1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8903679A1C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8903679F1C2A1EC00019A1AF /* CaffeineNearMe.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffeineNearMe.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +61,9 @@
 		890367B01C2A1EC00019A1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890367BF1C2A1FD70019A1AF /* LERHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERHomeViewController.h; sourceTree = "<group>"; };
 		890367C01C2A1FD70019A1AF /* LERHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERHomeViewController.m; sourceTree = "<group>"; };
+		894C63DA1C3B1F75000A0C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		894C63DC1C3B7DED000A0C4F /* LERCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCustomAnnotation.h; sourceTree = "<group>"; };
+		894C63DD1C3B7DED000A0C4F /* LERCustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCustomAnnotation.m; sourceTree = "<group>"; };
 		8952A5C71C38C0190008312F /* LERCoffeeShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCoffeeShopViewController.h; sourceTree = "<group>"; };
 		8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCoffeeShopViewController.m; sourceTree = "<group>"; };
 		8952A5CA1C3A23380008312F /* LERCoffeeShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCoffeeShop.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */,
 				89ADB38E1C3864D90024DAD4 /* LERMapViewController.h */,
 				89ADB38F1C3864D90024DAD4 /* LERMapViewController.m */,
+				894C63DC1C3B7DED000A0C4F /* LERCustomAnnotation.h */,
+				894C63DD1C3B7DED000A0C4F /* LERCustomAnnotation.m */,
 				89ADB3841C3860C10024DAD4 /* LERCustomTabBarControllerViewController.h */,
 				89ADB3851C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m */,
 				89ADB3961C386B2A0024DAD4 /* LERCustomListCellTableViewCell.xib */,
@@ -171,7 +176,7 @@
 		890367891C2A1EC00019A1AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				890367951C2A1EC00019A1AF /* Assets.xcassets */,
+				894C63DA1C3B1F75000A0C4F /* Assets.xcassets */,
 				89ADB38B1C3861210024DAD4 /* LERConstants.h */,
 				89ADB38C1C3861210024DAD4 /* LERConstants.m */,
 				8903678A1C2A1EC00019A1AF /* main.m */,
@@ -316,8 +321,8 @@
 			files = (
 				89ADB3981C386B2B0024DAD4 /* LERCustomListCellTableViewCell.xib in Resources */,
 				890367991C2A1EC00019A1AF /* LaunchScreen.storyboard in Resources */,
+				894C63DB1C3B1F75000A0C4F /* Assets.xcassets in Resources */,
 				8952A5CE1C3A2BB30008312F /* Main.storyboard in Resources */,
-				890367961C2A1EC00019A1AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +398,7 @@
 				8903678E1C2A1EC00019A1AF /* AppDelegate.m in Sources */,
 				890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */,
 				89ADB3861C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m in Sources */,
+				894C63DE1C3B7DED000A0C4F /* LERCustomAnnotation.m in Sources */,
 				89ADB3901C3864D90024DAD4 /* LERMapViewController.m in Sources */,
 				8952A5C91C38C0190008312F /* LERCoffeeShopViewController.m in Sources */,
 				89ADB38D1C3861210024DAD4 /* LERConstants.m in Sources */,

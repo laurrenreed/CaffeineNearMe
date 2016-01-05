@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,28 +15,29 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="MX9-Eo-3L2">
-                                <rect key="frame" x="-18" y="-13" width="633" height="625"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="3dd-ck-ey9">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MX9-Eo-3L2" secondAttribute="bottom" constant="-12" id="O1o-E7-peX"/>
-                            <constraint firstItem="MX9-Eo-3L2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-33" id="aTA-BA-7Lt"/>
-                            <constraint firstItem="MX9-Eo-3L2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-38" id="fKk-OJ-bj7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MX9-Eo-3L2" secondAttribute="trailing" constant="-35" id="lKd-Mw-BDG"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3dd-ck-ey9" secondAttribute="bottom" id="49N-dr-0Ed"/>
+                            <constraint firstItem="3dd-ck-ey9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="SAU-jF-9Fd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3dd-ck-ey9" secondAttribute="trailing" constant="-20" id="eor-Gc-Zqd"/>
+                            <constraint firstItem="3dd-ck-ey9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="zMN-KX-3on"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-1875.5" y="356.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreenImage" width="491" height="741"/>
+        <image name="launchImage" width="459" height="685"/>
     </resources>
 </document>

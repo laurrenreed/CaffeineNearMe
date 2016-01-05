@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *formattedAddress;
 @property (weak, nonatomic) IBOutlet UILabel *city;
 @property (weak, nonatomic) IBOutlet UILabel *activitySummary;
-@property (weak, nonatomic) IBOutlet UILabel *phoneNumber;
+@property (weak, nonatomic) IBOutlet UIButton *phoneNumber;
 @property (weak, nonatomic) IBOutlet UIButton *webAddress;
 
 @property (strong, nonatomic) NSArray *objectsToShare;
@@ -55,9 +55,10 @@
     }
     
     if (self.coffeeShopDetails.phoneNumber == nil) {
-        self.phoneNumber.text = @"Phone number univailable";
+        [[self phoneNumber] setTitle:@"Phone number univailable" forState:UIControlStateNormal];
     } else {
-        self.phoneNumber.text = [NSString stringWithFormat:@"%@", self.coffeeShopDetails.phoneNumber];
+        NSString *phoneNumber = [NSString stringWithFormat:@"%@", self.coffeeShopDetails.phoneNumber];
+        [[self phoneNumber] setTitle: phoneNumber forState:UIControlStateNormal];
     }
     
     if (self.coffeeShopDetails.webAddress == nil) {
@@ -88,6 +89,22 @@
     [self.mapView addAnnotation:coffeeShopLocation];
     
 }
+- (IBAction)phoneNumber:(id)sender {
+    
+    NSString *phoneNumber = [NSString stringWithFormat:@"%@", self.coffeeShopDetails.phoneNumber];
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phoneNumber]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+        [[UIApplication sharedApplication] openURL:phoneUrl];
+    } else
+    {
+       
+        UIAlertView *callFailed = [[UIAlertView alloc]initWithTitle:@"Uh oh!" message:@"Calling unavailable at this time." delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [callFailed show];
+ 
+    }
+}
+
 
 - (IBAction)webAddress:(id)sender {
     [[UIApplication sharedApplication] openURL:self.coffeeShopDetails.webAddress];

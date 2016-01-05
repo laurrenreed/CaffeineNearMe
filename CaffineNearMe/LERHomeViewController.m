@@ -11,16 +11,17 @@
 #import "LERCustomListCellTableViewCell.h"
 #import "LERCoffeeShopViewController.h"
 
+#define METERS_TO_MILES 0.000621371192
+
 @interface LERHomeViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UITableView *coffeeShopListTableView;
 @property (nonatomic, strong) NSArray *venues;
-@property (strong, nonatomic) CLLocation *location;
-@property (nonatomic, strong) CLLocation *lastUpdatedLocation;
-@property (nonatomic, strong) void (^locationCompletion)(CLLocation *location, BOOL success);
 @property (nonatomic, strong) LERCoffeeShop *selectedCoffeeShop;
-
+@property (nonatomic, assign) CGFloat latitude;
+@property (nonatomic, assign) CGFloat longitude;
+@property (weak, nonatomic) IBOutlet UILabel *userCurrentLocationLabel;
 
 @end
 
@@ -28,33 +29,67 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    
+    [[self locationManager] setDelegate:self];
+    
+    if ([[self locationManager] respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [[self locationManager] requestWhenInUseAuthorization];
+    }
+    
+    [[self locationManager] setDesiredAccuracy:kCLLocationAccuracyBest];
+    [[self locationManager] startUpdatingLocation];
+    
     [self.coffeeShopListTableView registerNib:[UINib nibWithNibName:@"LERCustomListCellTableViewCell" bundle:nil] forCellReuseIdentifier:@"customListCell"];
     
     self.coffeeShopListTableView.rowHeight = 60;
     self.coffeeShopListTableView.delegate = self;
     self.coffeeShopListTableView.dataSource = self;
     self.coffeeShopListTableView.backgroundColor = [UIColor clearColor];
-    
+}
+
+- (void)reverseGeocodeforLocation:(CLLocation *)location {
+    CLGeocoder *geoCoder = [CLGeocoder new];
+    [geoCoder reverseGeocodeLocation:self.locationManager.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Error %@", error.description);
+        } else {
+            CLPlacemark *placemark = [placemarks lastObject];
+            NSString *userLocation =[NSString stringWithFormat:@"➢ %@, %@", [placemark locality], [placemark administrativeArea]];
+            self.userCurrentLocationLabel.text = userLocation;
+        }
+
+    }];
+}
+
+-(void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *location = locations.lastObject;
+    self.latitude = location.coordinate.latitude;
+    self.longitude = location.coordinate.longitude;
+    [self reverseGeocodeforLocation:location];
     [self getVenuesFromFoursquare];
 }
 
 - (void)getVenuesFromFoursquare {
-    [Foursquare2 venueSearchNearByLatitude:@(40.73224021865526)
-                                 longitude:@(-73.99370899999997)
+    
+    //radius 10,000 bc there are exactly 2 coffee shops within 1000 of my home town on foursquare
+    [Foursquare2 venueSearchNearByLatitude:@(self.latitude)
+                                 longitude:@(self.longitude)
                                      query:@"Coffee"
                                      limit:@100
                                     intent:intentBrowse
-                                    radius:@(1000)
+                                    radius:@(10000)
                                 categoryId:nil
                                   callback:^(BOOL success, id result) {
-        NSDictionary *venueDic = (NSDictionary *)result;
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                self.venues = venueDic[@"response"][@"venues"];
-                [self.coffeeShopListTableView reloadData];
-        }];
-                                      
+                                      NSDictionary *venueDic = (NSDictionary *)result;
+                                      [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                          self.venues = venueDic[@"response"][@"venues"];
+                                          [self.coffeeShopListTableView reloadData];
+                                      }];
+            
     }];
+    [[self locationManager] stopUpdatingLocation];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -79,10 +114,21 @@
     cell.backgroundColor = [UIColor clearColor];
     cell.coffeeShopName.text = venue[@"name"];
     cell.coffeeShopAddress.text = venue[@"location"][@"address"];
-    NSNumber *distance = venue[@"location"][@"distance"];
-    NSString *distanceFromMe = [NSString stringWithFormat:@"%@ mls", distance];
-    cell.distanceFromMe.text = distanceFromMe;
-    NSLog(@"VENUE!!! %@", venue);
+    
+    CLLocation *currentLocation = [[CLLocation alloc] initWithLatitude:self.latitude longitude:self.longitude];
+    NSNumber *lat = venue[@"location"][@"lat"];
+    NSNumber *lng = venue[@"location"][@"lng"];
+    CLLocation *coffeeShopLocation = [[CLLocation alloc] initWithLatitude:[lat floatValue] longitude:[lng floatValue]];
+    CLLocationDistance distance = [currentLocation distanceFromLocation:coffeeShopLocation];
+    
+    distance = distance * METERS_TO_MILES;
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+    formatter.maximumFractionDigits = 2;
+    formatter.roundingMode = NSNumberFormatterRoundUp;
+    
+    NSString *distanceString = [formatter stringFromNumber:@(distance)];
+    cell.distanceFromMe.text = [NSString stringWithFormat:@"%@ mls", distanceString];
     
     return cell;
 }
@@ -100,10 +146,12 @@
     self.selectedCoffeeShop.formattedAddress = venue[@"location"][@"formattedAddress"];
     self.selectedCoffeeShop.latitude = venue[@"location"][@"lat"];
     self.selectedCoffeeShop.longitude = venue[@"location"][@"lng"];
+    
     NSString *webAddress = venue[@"url"];
     self.selectedCoffeeShop.webAddress = [NSURL URLWithString:webAddress];
+    
     self.selectedCoffeeShop.activitySummary = venue[@"summary"];
-    self.selectedCoffeeShop.phoneNumber = venue[@"phone"];
+    self.selectedCoffeeShop.phoneNumber = venue[@"contact"][@"phone"];
     self.selectedCoffeeShop.city = venue[@"location"][@"city"];
     return self.selectedCoffeeShop;
 }
@@ -111,8 +159,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([[segue identifier] isEqualToString:@"checkOutCoffeeShopDetail"]){
-        //         PGBChatMessageVC *chatViewController = (PGBChatMessageVC *)segue.destinationViewController;
-
         LERCoffeeShopViewController *coffeeShopDetailViewController = (LERCoffeeShopViewController *)segue.destinationViewController;
         
         NSIndexPath *selectedIndexPath = self.coffeeShopListTableView.indexPathForSelectedRow;
