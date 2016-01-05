@@ -8,6 +8,9 @@
 
 #import "LERSearchViewController.h"
 #import "LERCustomListCellTableViewCell.h"
+#import "LERCoffeeShop.h"
+#import "LERCoffeeShopViewController.h"
+
 #define METERS_TO_MILES 0.000621371192
 
 @interface LERSearchViewController () <UISearchBarDelegate, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate>
@@ -17,6 +20,7 @@
 @property (nonatomic, assign) CGFloat latitude;
 @property (nonatomic, assign) CGFloat longitude;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) LERCoffeeShop *selectedCoffeeShop;
 
 @end
 
@@ -34,16 +38,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
-    
-//    peration *)venueSearchNearLocation:(NSString *)location
-//query:(NSString *)query
-//limit:(NSNumber *)limit
-//intent:(FoursquareIntentType)intent
-//radius:(NSNumber *)radius
-//categoryId:(NSString *)categoryId
-//callback:(Foursquare2Callback)callback;
-//    
-//    
+
     self.locationManager = [[CLLocationManager alloc] init];
     [[self locationManager] setDelegate:self];
     if ([[self locationManager] respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
@@ -61,7 +56,6 @@
     self.latitude = location.coordinate.latitude;
     self.longitude = location.coordinate.longitude;
 
-    // call search helper methods here
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
@@ -76,7 +70,6 @@
 
 - (void)getVenuesFromFoursquareWithName:(NSString *)query {
     
-    //radius 10,000 bc there are exactly 2 coffee shops within 1000 of my home town on foursquare
     [Foursquare2 venueSearchNearByLatitude:@(self.latitude)
                                  longitude:@(self.longitude)
                                      query:query
@@ -94,19 +87,6 @@
                                   }];
     [self searchFoursquareForCoffeeShopsWithLocation:query];
 }
-
-//- (void)geoCodeLocationFromString:(NSString *)query {
-//    CLGeocoder *geoCoder = [[CLGeocoder alloc] init];
-//    [geoCoder geocodeAddressString:query
-//                 completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-//                     if(error){
-//                         NSLog(@"error: %@", error.description);
-//                         [self getVenuesFromFoursquareWithName:query];
-//                     } else if(placemarks && placemarks.count > 0) {
-//                         [self searchFoursquareForCoffeeShopsWithLocation:query];
-//                     }
-//                 }];
-//}
 
 - (void)searchFoursquareForCoffeeShopsWithLocation:(NSString *)query {
     
@@ -179,52 +159,39 @@
  
      return cell;
  }
- 
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"cOCoffeeShopDetail" sender:nil];
+}
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (LERCoffeeShop *)makeDictionaryToCoffeeShopObject:(NSIndexPath *)selectedIndexPath {
+    self.selectedCoffeeShop = [LERCoffeeShop new];
+    
+    NSDictionary *venue = self.venues[selectedIndexPath.row];
+    
+    self.selectedCoffeeShop.name = venue[@"name"];
+    self.selectedCoffeeShop.formattedAddress = venue[@"location"][@"formattedAddress"];
+    self.selectedCoffeeShop.latitude = venue[@"location"][@"lat"];
+    self.selectedCoffeeShop.longitude = venue[@"location"][@"lng"];
+    
+    NSString *webAddress = venue[@"url"];
+    self.selectedCoffeeShop.webAddress = [NSURL URLWithString:webAddress];
+    
+    self.selectedCoffeeShop.activitySummary = venue[@"summary"];
+    self.selectedCoffeeShop.phoneNumber = venue[@"contact"][@"phone"];
+    self.selectedCoffeeShop.city = venue[@"location"][@"city"];
+    return self.selectedCoffeeShop;
+}
 
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([[segue identifier] isEqualToString:@"cOCoffeeShopDetail"]){
+        LERCoffeeShopViewController *coffeeShopDetailViewController = (LERCoffeeShopViewController *)segue.destinationViewController;
+        
+        NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
+        [self makeDictionaryToCoffeeShopObject:selectedIndexPath];
+        coffeeShopDetailViewController.coffeeShopDetails = self.selectedCoffeeShop;
+    }
+}
 
 @end
