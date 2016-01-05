@@ -52,7 +52,19 @@
                                               iconSize:40.0f
                                              imageSize:CGSizeMake(90.0f, 90.0f)];
     self.tabBar.items[1].selectedImage = selectedMapIcon;
-
+    
+    UIImage *searchViewIcon = [IonIcons imageWithIcon:ion_ios_search_strong
+                                            iconColor:[UIColor grayColor]
+                                             iconSize:40.0f
+                                            imageSize:CGSizeMake(90.0f, 90.0f)];
+    [self.tabBar.items[2] setTitle:nil];
+    [self.tabBar.items[2] setImage:searchViewIcon];
+    self.tabBar.items[2].imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    UIImage *selectedSearchIcon = [IonIcons imageWithIcon:ion_ios_search_strong
+                                                iconColor:[UIColor darkGrayColor]
+                                                 iconSize:40.0f
+                                                imageSize:CGSizeMake(90.0f, 90.0f)];
+    self.tabBar.items[2].selectedImage = selectedSearchIcon;
 }
 
 

@@ -16,6 +16,7 @@
 		890367C11C2A1FD70019A1AF /* LERHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890367C01C2A1FD70019A1AF /* LERHomeViewController.m */; };
 		894C63DB1C3B1F75000A0C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894C63DA1C3B1F75000A0C4F /* Assets.xcassets */; };
 		894C63DE1C3B7DED000A0C4F /* LERCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 894C63DD1C3B7DED000A0C4F /* LERCustomAnnotation.m */; };
+		894C63E11C3B9AD5000A0C4F /* LERSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894C63E01C3B9AD5000A0C4F /* LERSearchViewController.m */; };
 		8952A5C91C38C0190008312F /* LERCoffeeShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */; };
 		8952A5CC1C3A23380008312F /* LERCoffeeShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8952A5CB1C3A23380008312F /* LERCoffeeShop.m */; };
 		8952A5CE1C3A2BB30008312F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8952A5CD1C3A2BB30008312F /* Main.storyboard */; };
@@ -64,6 +65,8 @@
 		894C63DA1C3B1F75000A0C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		894C63DC1C3B7DED000A0C4F /* LERCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCustomAnnotation.h; sourceTree = "<group>"; };
 		894C63DD1C3B7DED000A0C4F /* LERCustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCustomAnnotation.m; sourceTree = "<group>"; };
+		894C63DF1C3B9AD5000A0C4F /* LERSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERSearchViewController.h; sourceTree = "<group>"; };
+		894C63E01C3B9AD5000A0C4F /* LERSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERSearchViewController.m; sourceTree = "<group>"; };
 		8952A5C71C38C0190008312F /* LERCoffeeShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCoffeeShopViewController.h; sourceTree = "<group>"; };
 		8952A5C81C38C0190008312F /* LERCoffeeShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERCoffeeShopViewController.m; sourceTree = "<group>"; };
 		8952A5CA1C3A23380008312F /* LERCoffeeShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERCoffeeShop.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				89ADB38F1C3864D90024DAD4 /* LERMapViewController.m */,
 				894C63DC1C3B7DED000A0C4F /* LERCustomAnnotation.h */,
 				894C63DD1C3B7DED000A0C4F /* LERCustomAnnotation.m */,
+				894C63DF1C3B9AD5000A0C4F /* LERSearchViewController.h */,
+				894C63E01C3B9AD5000A0C4F /* LERSearchViewController.m */,
 				89ADB3841C3860C10024DAD4 /* LERCustomTabBarControllerViewController.h */,
 				89ADB3851C3860C10024DAD4 /* LERCustomTabBarControllerViewController.m */,
 				89ADB3961C386B2A0024DAD4 /* LERCustomListCellTableViewCell.xib */,
@@ -404,6 +409,7 @@
 				89ADB38D1C3861210024DAD4 /* LERConstants.m in Sources */,
 				8952A5CC1C3A23380008312F /* LERCoffeeShop.m in Sources */,
 				89ADB3971C386B2B0024DAD4 /* LERCustomListCellTableViewCell.m in Sources */,
+				894C63E11C3B9AD5000A0C4F /* LERSearchViewController.m in Sources */,
 				8903678B1C2A1EC00019A1AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
