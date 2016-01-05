@@ -7,90 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B6DA2D580FE28CC043984853BB31305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EDBBCF0517C5D37B5B1FEEEAAAD46A /* UIKit.framework */; };
-		0C305E71EF403694DB6F0A2AD975837C /* Foursquare-API-v2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E58E13913DFF303A68950DCB2EF96 /* Foursquare-API-v2-dummy.m */; };
-		2148C5871240649B5D08B5E9A08ADA99 /* FSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0BB68154648E061EB84C77869CC507 /* FSOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2A853B9E1A59919565519D61DA654694 /* FSWebLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D10CEA423FAF2EB47B46B9A0DD68D4 /* FSWebLogin.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2FF12C4C77179B41A2C9A026F17B7CB7 /* FSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E688867A614FB8B6F265EB96B76766 /* FSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3813C37DB9032F8A8ECBD89D9BF5F3D8 /* Pods-CaffineNearMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC8E04C937B8FDC9DB41B8BF159DCFE /* Pods-CaffineNearMe-dummy.m */; };
-		417DFCF9667EBA2363643FF0E8CF4889 /* FSOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA2067058EB7843F1B0D3A7B8BB17DB /* FSOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4ADC3D407FA47D09A512F4986FEF01A4 /* FSWebLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FFE618BC68F671997D6BAFE04872B03 /* FSWebLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D6DB2F1C1580619A151B1F0AE36CCE1 /* ionicons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FF16BF9ED8E585BC5A109A5997F1 /* ionicons-dummy.m */; };
-		4E5EF8D13EBC93663C1D761B2C950413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635F0CFB6243C68AC4FE3441023CDFA3 /* Foundation.framework */; };
-		540394775468C88140E145D11D1A923C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635F0CFB6243C68AC4FE3441023CDFA3 /* Foundation.framework */; };
-		5B3BED169632ECA7EC06CFE401A45FE7 /* ionicons-codes.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BDC640720116C8B949C88B19BB7A0E /* ionicons-codes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FBC62786E6324DCDE620E1985C764E1 /* FontInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7E2BB7DF2CC42DCCEFA1697152B227 /* FontInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A55FC369D4E062F96148FD19DFDB537F /* IonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D82689D4B5A0C6CB27AB348AB3D7035 /* IonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2758A91D4F3603E0C6F58E0A48C7586 /* Foursquare2.m in Sources */ = {isa = PBXBuildFile; fileRef = BE27E85A41AAF18CDA4B06144C489CA7 /* Foursquare2.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C1007E25FDD5EE896494ADD3E88B6850 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C89B4787DDFF8EAAFC69878A2F8BC0 /* FontInspector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C1D99BC278EDDEAAAA3B81998E623428 /* FSOAuthNoAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B5226D3F59E35CD470334125EE9CF /* FSOAuthNoAppStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C3CDAB1E7D658E3AE4BA80A05FDEC0BA /* FSOAuthNoAppStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDB30925A3BF04820DCA8630933D951 /* FSOAuthNoAppStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C61DA2F7E6C382B011C2F1031EFEE520 /* FSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EEB36EB4929940A71BCFE98633A24CA /* FSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D718925DD2EA104A003D2FD470E977BD /* Foursquare2.h in Headers */ = {isa = PBXBuildFile; fileRef = 07C37C4C7746EABB7162BAE224575E66 /* Foursquare2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5802D95FC84167BE5A12606D0FE0E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635F0CFB6243C68AC4FE3441023CDFA3 /* Foundation.framework */; };
-		F50250E56C301387438BD172870D0C90 /* IonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B5FF0C8D501FBEAA76885F71154FA6 /* IonIcons.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F775B8B68F4E04DC25EF581AD1C06994 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42FBF9C41BE23794EE0429ABBAB8B4 /* Security.framework */; };
+		0B6DA2D580FE28CC043984853BB31305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEC17A1B692433737CF77383394C81 /* UIKit.framework */; };
+		0C305E71EF403694DB6F0A2AD975837C /* Foursquare-API-v2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFAD12D5702C87E4041BF24B1D111E3 /* Foursquare-API-v2-dummy.m */; };
+		2148C5871240649B5D08B5E9A08ADA99 /* FSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F3484476D9A948B9915918E2A32B1 /* FSOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		2A853B9E1A59919565519D61DA654694 /* FSWebLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E48A130B20A70869A6666BD8075F686C /* FSWebLogin.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2FF12C4C77179B41A2C9A026F17B7CB7 /* FSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3450E92C22775A2626CC7657AD21B1 /* FSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		417DFCF9667EBA2363643FF0E8CF4889 /* FSOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F2A8931E04B2A04C9916ABCDFA92A /* FSOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ADC3D407FA47D09A512F4986FEF01A4 /* FSWebLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C66EBD694303A148B9B0F91AFC8D9FA /* FSWebLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D6DB2F1C1580619A151B1F0AE36CCE1 /* ionicons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9944DBA14C0B72BA8C0E00F70D4428A /* ionicons-dummy.m */; };
+		52C9BDB3041F34EF9560581C4B3BB276 /* Pods-CaffeineNearMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2AFD560C0C3670ECD388C98B62FEC /* Pods-CaffeineNearMe-dummy.m */; };
+		540394775468C88140E145D11D1A923C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		5B3BED169632ECA7EC06CFE401A45FE7 /* ionicons-codes.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC05442C0AA03ACC0726283A19D05EF /* ionicons-codes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C4669C36189E19756369C7B799C63F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC00491D5BFDA2FAA1C2CEEA9776B44 /* CoreGraphics.framework */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A7438FAB3DEAB11FAA8BF623A0640D4B /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8FBC62786E6324DCDE620E1985C764E1 /* FontInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = E41FBE8B93437454A684BFA2E672FEBE /* FontInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A55FC369D4E062F96148FD19DFDB537F /* IonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D34A35AC0480AE910287FF4C6D39681 /* IonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2758A91D4F3603E0C6F58E0A48C7586 /* Foursquare2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4D18DF1459A4D54F6E9E3E58B8DFF /* Foursquare2.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C1007E25FDD5EE896494ADD3E88B6850 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD644EFFBEB540C226D6796A7482922 /* FontInspector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C1D99BC278EDDEAAAA3B81998E623428 /* FSOAuthNoAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B12946E7E20C6A4B82F3C7698FE4F8FC /* FSOAuthNoAppStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3CDAB1E7D658E3AE4BA80A05FDEC0BA /* FSOAuthNoAppStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 599C46DE8FE36D35C31142F26A1C3289 /* FSOAuthNoAppStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61DA2F7E6C382B011C2F1031EFEE520 /* FSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = A92A8D3CE00CBDC67E65013A78BB26A1 /* FSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D718925DD2EA104A003D2FD470E977BD /* Foursquare2.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CE81625C9FABE003FB47005C74FE5B /* Foursquare2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5802D95FC84167BE5A12606D0FE0E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		F3AFE5C3D8D792EA2A3B5CFC2D3331B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		F50250E56C301387438BD172870D0C90 /* IonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = C75F057827BE1FD05335672E578BCD67 /* IonIcons.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F775B8B68F4E04DC25EF581AD1C06994 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00004D6E9BE4CB4A62F38A3044584389 /* Security.framework */; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4866544C036693BDD53D4186E65D763A /* MBProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7C86E6CB1F6DB7466DB12BC2AB1A86D /* PBXContainerItemProxy */ = {
+		448EEE6379248BCCEBF89A077C615FF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 084B1FF8E099CDDF6B5FD3169504D512;
-			remoteInfo = ionicons;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
 		};
-		F699A6205823BAA74839F98AC101E097 /* PBXContainerItemProxy */ = {
+		D6791E24D2E705021829BD24A882041D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1C5995502EA9FA2CE72BD7E295F27E65;
 			remoteInfo = "Foursquare-API-v2";
 		};
+		FA7B3380DE094010CBB639A554DF3AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 084B1FF8E099CDDF6B5FD3169504D512;
+			remoteInfo = ionicons;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03660BA6EFC1B635CEE4BEF80248AB26 /* Pods-CaffineNearMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaffineNearMe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		041B4E1460DAAC115FC4C54DFFA8BAD0 /* pin@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pin@2x.png"; path = "Foursquare2/pin@2x.png"; sourceTree = "<group>"; };
-		07C37C4C7746EABB7162BAE224575E66 /* Foursquare2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Foursquare2.h; path = Foursquare2/Foursquare2.h; sourceTree = "<group>"; };
-		07D3FF16BF9ED8E585BC5A109A5997F1 /* ionicons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ionicons-dummy.m"; sourceTree = "<group>"; };
-		11BD35F5794E3C3861403C7FF8B95F8C /* Pods-CaffineNearMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaffineNearMe.debug.xcconfig"; sourceTree = "<group>"; };
-		1381DBEBAC4B109DFAEE8D5152664C90 /* Foursquare-API-v2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Foursquare-API-v2-prefix.pch"; sourceTree = "<group>"; };
-		16E64C798A943FE21E43FBE3181C3A7E /* poweredByFoursquare_gray.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = poweredByFoursquare_gray.png; path = Foursquare2/poweredByFoursquare_gray.png; sourceTree = "<group>"; };
-		18B710618447C10C8EB2F0665D464238 /* ionicons.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ionicons.xcconfig; sourceTree = "<group>"; };
-		1BBDCE262169D2F0870E44A44BF4B55A /* libFoursquare-API-v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoursquare-API-v2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F21D5EBC73E283F4EC4B3A4843FED45 /* libionicons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libionicons.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FFE618BC68F671997D6BAFE04872B03 /* FSWebLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSWebLogin.h; path = Foursquare2/FSWebLogin.h; sourceTree = "<group>"; };
-		32B5FF0C8D501FBEAA76885F71154FA6 /* IonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IonIcons.m; path = ionicons/IonIcons.m; sourceTree = "<group>"; };
-		3DA2067058EB7843F1B0D3A7B8BB17DB /* FSOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSOperation.h; path = Foursquare2/FSOperation.h; sourceTree = "<group>"; };
-		3EEB36EB4929940A71BCFE98633A24CA /* FSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSKeychain.h; path = Foursquare2/FSKeychain.h; sourceTree = "<group>"; };
-		44C89B4787DDFF8EAAFC69878A2F8BC0 /* FontInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FontInspector.m; path = ionicons/FontInspector.m; sourceTree = "<group>"; };
-		4BC8E04C937B8FDC9DB41B8BF159DCFE /* Pods-CaffineNearMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaffineNearMe-dummy.m"; sourceTree = "<group>"; };
-		4F7E2BB7DF2CC42DCCEFA1697152B227 /* FontInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontInspector.h; path = ionicons/FontInspector.h; sourceTree = "<group>"; };
-		4FE990ACB9E4BE6A740198E92A12B951 /* Pods-CaffineNearMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaffineNearMe-resources.sh"; sourceTree = "<group>"; };
-		50AA0072BA36B1F52BEC0423BAF6D203 /* Pods-CaffineNearMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaffineNearMe.release.xcconfig"; sourceTree = "<group>"; };
-		5358F4A6D2CC16A26D9449E46B97EE2C /* Foursquare-API-v2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Foursquare-API-v2.xcconfig"; sourceTree = "<group>"; };
-		53BDC640720116C8B949C88B19BB7A0E /* ionicons-codes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ionicons-codes.h"; path = "ionicons/ionicons-codes.h"; sourceTree = "<group>"; };
-		59E688867A614FB8B6F265EB96B76766 /* FSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSKeychain.m; path = Foursquare2/FSKeychain.m; sourceTree = "<group>"; };
-		5DDB30925A3BF04820DCA8630933D951 /* FSOAuthNoAppStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSOAuthNoAppStore.h; path = Foursquare2/FSOAuthNoAppStore.h; sourceTree = "<group>"; };
-		635F0CFB6243C68AC4FE3441023CDFA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6503A65F22D0829A40E3522BD01E7AD0 /* Pods-CaffineNearMe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaffineNearMe-frameworks.sh"; sourceTree = "<group>"; };
-		741E58E13913DFF303A68950DCB2EF96 /* Foursquare-API-v2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Foursquare-API-v2-dummy.m"; sourceTree = "<group>"; };
-		75F4FCE9CD776C3D3E44CB2FC9B6FFA9 /* FSWebLogin.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSWebLogin.xib; path = Foursquare2/FSWebLogin.xib; sourceTree = "<group>"; };
-		7D82689D4B5A0C6CB27AB348AB3D7035 /* IonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IonIcons.h; path = ionicons/IonIcons.h; sourceTree = "<group>"; };
-		A800E054A9D151DF26D0447C27A800BA /* ionicons.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ionicons.bundle; path = ionicons/ionicons.bundle; sourceTree = "<group>"; };
-		AD42FBF9C41BE23794EE0429ABBAB8B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		00004D6E9BE4CB4A62F38A3044584389 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		09A3D464549AC0534858729DAECD5587 /* Pods-CaffeineNearMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaffeineNearMe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0BF4D18DF1459A4D54F6E9E3E58B8DFF /* Foursquare2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Foursquare2.m; path = Foursquare2/Foursquare2.m; sourceTree = "<group>"; };
+		1C66EBD694303A148B9B0F91AFC8D9FA /* FSWebLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSWebLogin.h; path = Foursquare2/FSWebLogin.h; sourceTree = "<group>"; };
+		1E2F3484476D9A948B9915918E2A32B1 /* FSOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSOperation.m; path = Foursquare2/FSOperation.m; sourceTree = "<group>"; };
+		2ADF4F0166F3E44FAE4FB91D1AC16C41 /* libionicons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libionicons.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D34A35AC0480AE910287FF4C6D39681 /* IonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IonIcons.h; path = ionicons/IonIcons.h; sourceTree = "<group>"; };
+		3132FF00B9DE72E24A8353D532F8124E /* Foursquare-API-v2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Foursquare-API-v2.xcconfig"; sourceTree = "<group>"; };
+		336F2A8931E04B2A04C9916ABCDFA92A /* FSOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSOperation.h; path = Foursquare2/FSOperation.h; sourceTree = "<group>"; };
+		3A3450E92C22775A2626CC7657AD21B1 /* FSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSKeychain.m; path = Foursquare2/FSKeychain.m; sourceTree = "<group>"; };
+		3BB3B283146BC932037E031A6CE00DFF /* pin@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pin@2x.png"; path = "Foursquare2/pin@2x.png"; sourceTree = "<group>"; };
+		448A6D9BC2DA79DC934ABC8B7404B598 /* Pods-CaffeineNearMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaffeineNearMe.debug.xcconfig"; sourceTree = "<group>"; };
+		4866544C036693BDD53D4186E65D763A /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		56E0D58BE34FE3DF4499D40BF310A6DB /* pin.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pin.png; path = Foursquare2/pin.png; sourceTree = "<group>"; };
+		58348A8D10875C4157DB152DD7DA85F4 /* libPods-CaffeineNearMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaffeineNearMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		599C46DE8FE36D35C31142F26A1C3289 /* FSOAuthNoAppStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSOAuthNoAppStore.h; path = Foursquare2/FSOAuthNoAppStore.h; sourceTree = "<group>"; };
+		5B0D4DF696B8C1E534E1A9B4F9263FED /* ionicons.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ionicons.bundle; path = ionicons/ionicons.bundle; sourceTree = "<group>"; };
+		5C8B5D0E3643FA0577593635108D4B76 /* Pods-CaffeineNearMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaffeineNearMe-resources.sh"; sourceTree = "<group>"; };
+		5C96C412C07E60377E94C0FD667888D5 /* FSWebLogin.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSWebLogin.xib; path = Foursquare2/FSWebLogin.xib; sourceTree = "<group>"; };
+		6A147E648E0DDA67BCE8C33DC45EFF87 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		6F81C9D57300BD2B77027F838281A29F /* Foursquare-API-v2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Foursquare-API-v2-prefix.pch"; sourceTree = "<group>"; };
+		78C4669C36189E19756369C7B799C63F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8396303A0E01FE9424CAEA6214165B33 /* poweredByFoursquare_gray.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = poweredByFoursquare_gray.png; path = Foursquare2/poweredByFoursquare_gray.png; sourceTree = "<group>"; };
+		85CE81625C9FABE003FB47005C74FE5B /* Foursquare2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Foursquare2.h; path = Foursquare2/Foursquare2.h; sourceTree = "<group>"; };
+		8DC00491D5BFDA2FAA1C2CEEA9776B44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		9D8886AF55E474D37A0A08391F00B14E /* ionicons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ionicons-prefix.pch"; sourceTree = "<group>"; };
+		A082E8641075C266767E6137D7835BD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A7438FAB3DEAB11FAA8BF623A0640D4B /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A92A8D3CE00CBDC67E65013A78BB26A1 /* FSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSKeychain.h; path = Foursquare2/FSKeychain.h; sourceTree = "<group>"; };
+		A9944DBA14C0B72BA8C0E00F70D4428A /* ionicons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ionicons-dummy.m"; sourceTree = "<group>"; };
+		AE50203448623EED80A853E3D45D3367 /* Pods-CaffeineNearMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaffeineNearMe.release.xcconfig"; sourceTree = "<group>"; };
+		B12946E7E20C6A4B82F3C7698FE4F8FC /* FSOAuthNoAppStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSOAuthNoAppStore.m; path = Foursquare2/FSOAuthNoAppStore.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE27E85A41AAF18CDA4B06144C489CA7 /* Foursquare2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Foursquare2.m; path = Foursquare2/Foursquare2.m; sourceTree = "<group>"; };
-		C52A329BD3929CB42E0F2620B37B90E0 /* libPods-CaffineNearMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaffineNearMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB2F5E6A30AFE888BCCE30B1C9DEDB48 /* pin.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pin.png; path = Foursquare2/pin.png; sourceTree = "<group>"; };
-		CB5ECDB44116B1C89BBD5F9F95E26596 /* ionicons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ionicons-prefix.pch"; sourceTree = "<group>"; };
-		E729EE0E57DDCB5D669DE003B3E6A884 /* Pods-CaffineNearMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaffineNearMe-acknowledgements.plist"; sourceTree = "<group>"; };
-		E8D10CEA423FAF2EB47B46B9A0DD68D4 /* FSWebLogin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSWebLogin.m; path = Foursquare2/FSWebLogin.m; sourceTree = "<group>"; };
-		ED3B5226D3F59E35CD470334125EE9CF /* FSOAuthNoAppStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSOAuthNoAppStore.m; path = Foursquare2/FSOAuthNoAppStore.m; sourceTree = "<group>"; };
-		EE0BB68154648E061EB84C77869CC507 /* FSOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSOperation.m; path = Foursquare2/FSOperation.m; sourceTree = "<group>"; };
-		F3EDBBCF0517C5D37B5B1FEEEAAAD46A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		FDC8B0A5A0DED12BFAEED6E70F88B959 /* poweredByFoursquare_gray@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "poweredByFoursquare_gray@2x.png"; path = "Foursquare2/poweredByFoursquare_gray@2x.png"; sourceTree = "<group>"; };
+		BAD644EFFBEB540C226D6796A7482922 /* FontInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FontInspector.m; path = ionicons/FontInspector.m; sourceTree = "<group>"; };
+		BC8D826159E77C33EBAB29625A8DD9A4 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF2AFD560C0C3670ECD388C98B62FEC /* Pods-CaffeineNearMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaffeineNearMe-dummy.m"; sourceTree = "<group>"; };
+		C0F02C23526F847D29A6F3DA05F84219 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		C75F057827BE1FD05335672E578BCD67 /* IonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IonIcons.m; path = ionicons/IonIcons.m; sourceTree = "<group>"; };
+		CDCA4DD230BF3EDB2F9E2010182A7DF1 /* Pods-CaffeineNearMe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaffeineNearMe-frameworks.sh"; sourceTree = "<group>"; };
+		CEFEC17A1B692433737CF77383394C81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CFFAD12D5702C87E4041BF24B1D111E3 /* Foursquare-API-v2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Foursquare-API-v2-dummy.m"; sourceTree = "<group>"; };
+		D3A3D9DF044E014B67DE259A9C2625CA /* ionicons.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ionicons.xcconfig; sourceTree = "<group>"; };
+		DB44B3F2BFA9FE99DE4D6222EED97355 /* libFoursquare-API-v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoursquare-API-v2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC02BFCD67C79B81DA50D12A482008C0 /* Pods-CaffeineNearMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaffeineNearMe-acknowledgements.plist"; sourceTree = "<group>"; };
+		E41FBE8B93437454A684BFA2E672FEBE /* FontInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontInspector.h; path = ionicons/FontInspector.h; sourceTree = "<group>"; };
+		E48A130B20A70869A6666BD8075F686C /* FSWebLogin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSWebLogin.m; path = Foursquare2/FSWebLogin.m; sourceTree = "<group>"; };
+		EFC05442C0AA03ACC0726283A19D05EF /* ionicons-codes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ionicons-codes.h"; path = "ionicons/ionicons-codes.h"; sourceTree = "<group>"; };
+		F9B07BF539E67ABD0AAE72DA87D4CF32 /* poweredByFoursquare_gray@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "poweredByFoursquare_gray@2x.png"; path = "Foursquare2/poweredByFoursquare_gray@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +118,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				540394775468C88140E145D11D1A923C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7D14B8A604ECC113FA4709640581E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AFE5C3D8D792EA2A3B5CFC2D3331B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,106 +139,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE3106064CACFF2CF9A33F430874CE21 /* Frameworks */ = {
+		E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5EF8D13EBC93663C1D761B2C950413 /* Foundation.framework in Frameworks */,
+				70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */,
+				2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37867FA2E4299B28FD2F2A9E6F3DA06B /* iOS */,
+				3E7949EFE90AB14070586457B41D47E2 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1EA5A65408EBA1635CEE208DAF7121AE /* ionicons */ = {
+		310D50C6184E65517FF485874A8DA369 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4F7E2BB7DF2CC42DCCEFA1697152B227 /* FontInspector.h */,
-				44C89B4787DDFF8EAAFC69878A2F8BC0 /* FontInspector.m */,
-				7D82689D4B5A0C6CB27AB348AB3D7035 /* IonIcons.h */,
-				32B5FF0C8D501FBEAA76885F71154FA6 /* IonIcons.m */,
-				53BDC640720116C8B949C88B19BB7A0E /* ionicons-codes.h */,
-				8DFC4C088D77F2410172C12DE62E66DD /* Resources */,
-				2018D76F3C3DDC88B082D593EE7268BC /* Support Files */,
-			);
-			path = ionicons;
-			sourceTree = "<group>";
-		};
-		2018D76F3C3DDC88B082D593EE7268BC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18B710618447C10C8EB2F0665D464238 /* ionicons.xcconfig */,
-				07D3FF16BF9ED8E585BC5A109A5997F1 /* ionicons-dummy.m */,
-				CB5ECDB44116B1C89BBD5F9F95E26596 /* ionicons-prefix.pch */,
+				D3A3D9DF044E014B67DE259A9C2625CA /* ionicons.xcconfig */,
+				A9944DBA14C0B72BA8C0E00F70D4428A /* ionicons-dummy.m */,
+				9D8886AF55E474D37A0A08391F00B14E /* ionicons-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ionicons";
 			sourceTree = "<group>";
 		};
-		2B8D1F6D44A58883ECA2B0A2DE49DF72 /* Targets Support Files */ = {
+		3E7949EFE90AB14070586457B41D47E2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DB3E7028D62A7E9461BCBF785940EA4E /* Pods-CaffineNearMe */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		37867FA2E4299B28FD2F2A9E6F3DA06B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				635F0CFB6243C68AC4FE3441023CDFA3 /* Foundation.framework */,
-				AD42FBF9C41BE23794EE0429ABBAB8B4 /* Security.framework */,
-				F3EDBBCF0517C5D37B5B1FEEEAAAD46A /* UIKit.framework */,
+				8DC00491D5BFDA2FAA1C2CEEA9776B44 /* CoreGraphics.framework */,
+				A082E8641075C266767E6137D7835BD2 /* Foundation.framework */,
+				00004D6E9BE4CB4A62F38A3044584389 /* Security.framework */,
+				CEFEC17A1B692433737CF77383394C81 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6F5B6479F8F8F364BB17DD61A17E2EA9 /* Resources */ = {
+		4C070557C1DA0944B3F98F5EA01E18C4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				75F4FCE9CD776C3D3E44CB2FC9B6FFA9 /* FSWebLogin.xib */,
-				CB2F5E6A30AFE888BCCE30B1C9DEDB48 /* pin.png */,
-				041B4E1460DAAC115FC4C54DFFA8BAD0 /* pin@2x.png */,
-				16E64C798A943FE21E43FBE3181C3A7E /* poweredByFoursquare_gray.png */,
-				FDC8B0A5A0DED12BFAEED6E70F88B959 /* poweredByFoursquare_gray@2x.png */,
+				D5E4B0E81B8530CA78F4B2BA09340F90 /* Pods-CaffeineNearMe */,
 			);
-			name = Resources;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7AFD2000E19213319069B24002C41F87 /* Pods */ = {
+		5B058241A59CA1C53A8BC141AF4827D2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD4782F0C0A3F2694E74A318A605C9CF /* Foursquare-API-v2 */,
-				1EA5A65408EBA1635CEE208DAF7121AE /* ionicons */,
+				FB7D40291974853DD43958CA2243AEFB /* Foursquare-API-v2 */,
+				9C6E10F52FF6E17BAF2E3F71303F043C /* ionicons */,
+				65510AF50F71F40CA7A143120C5D1CB2 /* MBProgressHUD */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7BCBD82A8FB674ED919258778444508B /* Support Files */ = {
+		65510AF50F71F40CA7A143120C5D1CB2 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				5358F4A6D2CC16A26D9449E46B97EE2C /* Foursquare-API-v2.xcconfig */,
-				741E58E13913DFF303A68950DCB2EF96 /* Foursquare-API-v2-dummy.m */,
-				1381DBEBAC4B109DFAEE8D5152664C90 /* Foursquare-API-v2-prefix.pch */,
+				78C4669C36189E19756369C7B799C63F /* MBProgressHUD.h */,
+				A7438FAB3DEAB11FAA8BF623A0640D4B /* MBProgressHUD.m */,
+				8B0E0D2C69C3A6A72063D21A1B402663 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Foursquare-API-v2";
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		7C92060918DB15329B5B17D782B92EB7 /* Products */ = {
+		7B24E189ECF6EAA3547AE76B03D75883 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BBDCE262169D2F0870E44A44BF4B55A /* libFoursquare-API-v2.a */,
-				2F21D5EBC73E283F4EC4B3A4843FED45 /* libionicons.a */,
-				C52A329BD3929CB42E0F2620B37B90E0 /* libPods-CaffineNearMe.a */,
+				DB44B3F2BFA9FE99DE4D6222EED97355 /* libFoursquare-API-v2.a */,
+				2ADF4F0166F3E44FAE4FB91D1AC16C41 /* libionicons.a */,
+				BC8D826159E77C33EBAB29625A8DD9A4 /* libMBProgressHUD.a */,
+				58348A8D10875C4157DB152DD7DA85F4 /* libPods-CaffeineNearMe.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,53 +224,101 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				7AFD2000E19213319069B24002C41F87 /* Pods */,
-				7C92060918DB15329B5B17D782B92EB7 /* Products */,
-				2B8D1F6D44A58883ECA2B0A2DE49DF72 /* Targets Support Files */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				5B058241A59CA1C53A8BC141AF4827D2 /* Pods */,
+				7B24E189ECF6EAA3547AE76B03D75883 /* Products */,
+				4C070557C1DA0944B3F98F5EA01E18C4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8DFC4C088D77F2410172C12DE62E66DD /* Resources */ = {
+		8B0E0D2C69C3A6A72063D21A1B402663 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A800E054A9D151DF26D0447C27A800BA /* ionicons.bundle */,
+				6A147E648E0DDA67BCE8C33DC45EFF87 /* MBProgressHUD.xcconfig */,
+				4866544C036693BDD53D4186E65D763A /* MBProgressHUD-dummy.m */,
+				C0F02C23526F847D29A6F3DA05F84219 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		98A4D4EFD96E6FBFF813619126EB8891 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D4DF696B8C1E534E1A9B4F9263FED /* ionicons.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		CD4782F0C0A3F2694E74A318A605C9CF /* Foursquare-API-v2 */ = {
+		9C6E10F52FF6E17BAF2E3F71303F043C /* ionicons */ = {
 			isa = PBXGroup;
 			children = (
-				07C37C4C7746EABB7162BAE224575E66 /* Foursquare2.h */,
-				BE27E85A41AAF18CDA4B06144C489CA7 /* Foursquare2.m */,
-				3EEB36EB4929940A71BCFE98633A24CA /* FSKeychain.h */,
-				59E688867A614FB8B6F265EB96B76766 /* FSKeychain.m */,
-				5DDB30925A3BF04820DCA8630933D951 /* FSOAuthNoAppStore.h */,
-				ED3B5226D3F59E35CD470334125EE9CF /* FSOAuthNoAppStore.m */,
-				3DA2067058EB7843F1B0D3A7B8BB17DB /* FSOperation.h */,
-				EE0BB68154648E061EB84C77869CC507 /* FSOperation.m */,
-				2FFE618BC68F671997D6BAFE04872B03 /* FSWebLogin.h */,
-				E8D10CEA423FAF2EB47B46B9A0DD68D4 /* FSWebLogin.m */,
-				6F5B6479F8F8F364BB17DD61A17E2EA9 /* Resources */,
-				7BCBD82A8FB674ED919258778444508B /* Support Files */,
+				E41FBE8B93437454A684BFA2E672FEBE /* FontInspector.h */,
+				BAD644EFFBEB540C226D6796A7482922 /* FontInspector.m */,
+				2D34A35AC0480AE910287FF4C6D39681 /* IonIcons.h */,
+				C75F057827BE1FD05335672E578BCD67 /* IonIcons.m */,
+				EFC05442C0AA03ACC0726283A19D05EF /* ionicons-codes.h */,
+				98A4D4EFD96E6FBFF813619126EB8891 /* Resources */,
+				310D50C6184E65517FF485874A8DA369 /* Support Files */,
 			);
-			path = "Foursquare-API-v2";
+			path = ionicons;
 			sourceTree = "<group>";
 		};
-		DB3E7028D62A7E9461BCBF785940EA4E /* Pods-CaffineNearMe */ = {
+		9CAA21971CD7298526644076BABFED89 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				03660BA6EFC1B635CEE4BEF80248AB26 /* Pods-CaffineNearMe-acknowledgements.markdown */,
-				E729EE0E57DDCB5D669DE003B3E6A884 /* Pods-CaffineNearMe-acknowledgements.plist */,
-				4BC8E04C937B8FDC9DB41B8BF159DCFE /* Pods-CaffineNearMe-dummy.m */,
-				6503A65F22D0829A40E3522BD01E7AD0 /* Pods-CaffineNearMe-frameworks.sh */,
-				4FE990ACB9E4BE6A740198E92A12B951 /* Pods-CaffineNearMe-resources.sh */,
-				11BD35F5794E3C3861403C7FF8B95F8C /* Pods-CaffineNearMe.debug.xcconfig */,
-				50AA0072BA36B1F52BEC0423BAF6D203 /* Pods-CaffineNearMe.release.xcconfig */,
+				3132FF00B9DE72E24A8353D532F8124E /* Foursquare-API-v2.xcconfig */,
+				CFFAD12D5702C87E4041BF24B1D111E3 /* Foursquare-API-v2-dummy.m */,
+				6F81C9D57300BD2B77027F838281A29F /* Foursquare-API-v2-prefix.pch */,
 			);
-			name = "Pods-CaffineNearMe";
-			path = "Target Support Files/Pods-CaffineNearMe";
+			name = "Support Files";
+			path = "../Target Support Files/Foursquare-API-v2";
+			sourceTree = "<group>";
+		};
+		ACA9F749048B3312B596092C2BE6AE68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C96C412C07E60377E94C0FD667888D5 /* FSWebLogin.xib */,
+				56E0D58BE34FE3DF4499D40BF310A6DB /* pin.png */,
+				3BB3B283146BC932037E031A6CE00DFF /* pin@2x.png */,
+				8396303A0E01FE9424CAEA6214165B33 /* poweredByFoursquare_gray.png */,
+				F9B07BF539E67ABD0AAE72DA87D4CF32 /* poweredByFoursquare_gray@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D5E4B0E81B8530CA78F4B2BA09340F90 /* Pods-CaffeineNearMe */ = {
+			isa = PBXGroup;
+			children = (
+				09A3D464549AC0534858729DAECD5587 /* Pods-CaffeineNearMe-acknowledgements.markdown */,
+				DC02BFCD67C79B81DA50D12A482008C0 /* Pods-CaffeineNearMe-acknowledgements.plist */,
+				BDF2AFD560C0C3670ECD388C98B62FEC /* Pods-CaffeineNearMe-dummy.m */,
+				CDCA4DD230BF3EDB2F9E2010182A7DF1 /* Pods-CaffeineNearMe-frameworks.sh */,
+				5C8B5D0E3643FA0577593635108D4B76 /* Pods-CaffeineNearMe-resources.sh */,
+				448A6D9BC2DA79DC934ABC8B7404B598 /* Pods-CaffeineNearMe.debug.xcconfig */,
+				AE50203448623EED80A853E3D45D3367 /* Pods-CaffeineNearMe.release.xcconfig */,
+			);
+			name = "Pods-CaffeineNearMe";
+			path = "Target Support Files/Pods-CaffeineNearMe";
+			sourceTree = "<group>";
+		};
+		FB7D40291974853DD43958CA2243AEFB /* Foursquare-API-v2 */ = {
+			isa = PBXGroup;
+			children = (
+				85CE81625C9FABE003FB47005C74FE5B /* Foursquare2.h */,
+				0BF4D18DF1459A4D54F6E9E3E58B8DFF /* Foursquare2.m */,
+				A92A8D3CE00CBDC67E65013A78BB26A1 /* FSKeychain.h */,
+				3A3450E92C22775A2626CC7657AD21B1 /* FSKeychain.m */,
+				599C46DE8FE36D35C31142F26A1C3289 /* FSOAuthNoAppStore.h */,
+				B12946E7E20C6A4B82F3C7698FE4F8FC /* FSOAuthNoAppStore.m */,
+				336F2A8931E04B2A04C9916ABCDFA92A /* FSOperation.h */,
+				1E2F3484476D9A948B9915918E2A32B1 /* FSOperation.m */,
+				1C66EBD694303A148B9B0F91AFC8D9FA /* FSWebLogin.h */,
+				E48A130B20A70869A6666BD8075F686C /* FSWebLogin.m */,
+				ACA9F749048B3312B596092C2BE6AE68 /* Resources */,
+				9CAA21971CD7298526644076BABFED89 /* Support Files */,
+			);
+			path = "Foursquare-API-v2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +346,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF1C003613925663F17E023C73AF519C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -311,7 +371,7 @@
 			);
 			name = ionicons;
 			productName = ionicons;
-			productReference = 2F21D5EBC73E283F4EC4B3A4843FED45 /* libionicons.a */;
+			productReference = 2ADF4F0166F3E44FAE4FB91D1AC16C41 /* libionicons.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1C5995502EA9FA2CE72BD7E295F27E65 /* Foursquare-API-v2 */ = {
@@ -328,25 +388,43 @@
 			);
 			name = "Foursquare-API-v2";
 			productName = "Foursquare-API-v2";
-			productReference = 1BBDCE262169D2F0870E44A44BF4B55A /* libFoursquare-API-v2.a */;
+			productReference = DB44B3F2BFA9FE99DE4D6222EED97355 /* libFoursquare-API-v2.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		567C5BDAD74108478D91406E26532C75 /* Pods-CaffineNearMe */ = {
+		32A43FD3DB97D28BF6FF623C55129C7B /* Pods-CaffeineNearMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4C9C19A0BB51C7109BFC8C89EC3F70 /* Build configuration list for PBXNativeTarget "Pods-CaffineNearMe" */;
+			buildConfigurationList = 62BFDFC26E6BB8C9B4F45803C30F2489 /* Build configuration list for PBXNativeTarget "Pods-CaffeineNearMe" */;
 			buildPhases = (
-				FC6D77B542FBE6B8B0E796C50CD0B3EF /* Sources */,
-				DE3106064CACFF2CF9A33F430874CE21 /* Frameworks */,
+				78688C7AD6479757092857EED1384DF2 /* Sources */,
+				8E7D14B8A604ECC113FA4709640581E2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE8F8562B7F566C138094B7F79A730FF /* PBXTargetDependency */,
-				79CBA9BD94928513516840E0E936DAAA /* PBXTargetDependency */,
+				9EA04EC255CAFE0AAE805410FCD238A5 /* PBXTargetDependency */,
+				1DDE7C4C4460B78F9241F88D8C31BCD6 /* PBXTargetDependency */,
+				B46FCBD99BAD16821A6346A24A4D0040 /* PBXTargetDependency */,
 			);
-			name = "Pods-CaffineNearMe";
-			productName = "Pods-CaffineNearMe";
-			productReference = C52A329BD3929CB42E0F2620B37B90E0 /* libPods-CaffineNearMe.a */;
+			name = "Pods-CaffeineNearMe";
+			productName = "Pods-CaffeineNearMe";
+			productReference = 58348A8D10875C4157DB152DD7DA85F4 /* libPods-CaffeineNearMe.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				098439AB598DDF1AF51146A2E3E2E562 /* Sources */,
+				E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */,
+				EF1C003613925663F17E023C73AF519C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = BC8D826159E77C33EBAB29625A8DD9A4 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -366,18 +444,28 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7C92060918DB15329B5B17D782B92EB7 /* Products */;
+			productRefGroup = 7B24E189ECF6EAA3547AE76B03D75883 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1C5995502EA9FA2CE72BD7E295F27E65 /* Foursquare-API-v2 */,
 				084B1FF8E099CDDF6B5FD3169504D512 /* ionicons */,
-				567C5BDAD74108478D91406E26532C75 /* Pods-CaffineNearMe */,
+				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
+				32A43FD3DB97D28BF6FF623C55129C7B /* Pods-CaffeineNearMe */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		098439AB598DDF1AF51146A2E3E2E562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */,
+				82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A5F1FA7D2FF280D5C07F515440549AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +479,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78688C7AD6479757092857EED1384DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C9BDB3041F34EF9560581C4B3BB276 /* Pods-CaffeineNearMe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		879FCE2C7D1EF78CB39C25F5E276AAB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,35 +497,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC6D77B542FBE6B8B0E796C50CD0B3EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3813C37DB9032F8A8ECBD89D9BF5F3D8 /* Pods-CaffineNearMe-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		79CBA9BD94928513516840E0E936DAAA /* PBXTargetDependency */ = {
+		1DDE7C4C4460B78F9241F88D8C31BCD6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ionicons;
-			target = 084B1FF8E099CDDF6B5FD3169504D512 /* ionicons */;
-			targetProxy = B7C86E6CB1F6DB7466DB12BC2AB1A86D /* PBXContainerItemProxy */;
+			name = MBProgressHUD;
+			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
+			targetProxy = 448EEE6379248BCCEBF89A077C615FF4 /* PBXContainerItemProxy */;
 		};
-		EE8F8562B7F566C138094B7F79A730FF /* PBXTargetDependency */ = {
+		9EA04EC255CAFE0AAE805410FCD238A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Foursquare-API-v2";
 			target = 1C5995502EA9FA2CE72BD7E295F27E65 /* Foursquare-API-v2 */;
-			targetProxy = F699A6205823BAA74839F98AC101E097 /* PBXContainerItemProxy */;
+			targetProxy = D6791E24D2E705021829BD24A882041D /* PBXContainerItemProxy */;
+		};
+		B46FCBD99BAD16821A6346A24A4D0040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ionicons;
+			target = 084B1FF8E099CDDF6B5FD3169504D512 /* ionicons */;
+			targetProxy = FA7B3380DE094010CBB639A554DF3AFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01903D8D7FD54232806F65C75E54E04D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18B710618447C10C8EB2F0665D464238 /* ionicons.xcconfig */;
+			baseConfigurationReference = D3A3D9DF044E014B67DE259A9C2625CA /* ionicons.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ionicons/ionicons-prefix.pch";
@@ -444,6 +538,23 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		6F8FCF14603EDBDED97A55222604DCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448A6D9BC2DA79DC934ABC8B7404B598 /* Pods-CaffeineNearMe.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -484,9 +595,9 @@
 			};
 			name = Debug;
 		};
-		92C0984E5699C9D37B4A1E9468053493 /* Release */ = {
+		A5E35E315CDF13B44BEA20E522EB8676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50AA0072BA36B1F52BEC0423BAF6D203 /* Pods-CaffineNearMe.release.xcconfig */;
+			baseConfigurationReference = AE50203448623EED80A853E3D45D3367 /* Pods-CaffeineNearMe.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -496,6 +607,24 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C550302C2133243B83B7191844429167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A147E648E0DDA67BCE8C33DC45EFF87 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -535,26 +664,9 @@
 			};
 			name = Release;
 		};
-		E880CC804F970757FF844145544DE9BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11BD35F5794E3C3861403C7FF8B95F8C /* Pods-CaffineNearMe.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		EA99D6A94F0D6935785221133D1FCDB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5358F4A6D2CC16A26D9449E46B97EE2C /* Foursquare-API-v2.xcconfig */;
+			baseConfigurationReference = 3132FF00B9DE72E24A8353D532F8124E /* Foursquare-API-v2.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Foursquare-API-v2/Foursquare-API-v2-prefix.pch";
@@ -570,9 +682,27 @@
 			};
 			name = Release;
 		};
+		ED2CBF2A6B682FB5E7EAA2CE28264B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A147E648E0DDA67BCE8C33DC45EFF87 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		EFE044096D07EA7D8B02A35F524F0A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5358F4A6D2CC16A26D9449E46B97EE2C /* Foursquare-API-v2.xcconfig */;
+			baseConfigurationReference = 3132FF00B9DE72E24A8353D532F8124E /* Foursquare-API-v2.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Foursquare-API-v2/Foursquare-API-v2-prefix.pch";
@@ -590,7 +720,7 @@
 		};
 		F26BAD9D4C77A4BCEE22AAB4EBA0D721 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18B710618447C10C8EB2F0665D464238 /* ionicons.xcconfig */;
+			baseConfigurationReference = D3A3D9DF044E014B67DE259A9C2625CA /* ionicons.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ionicons/ionicons-prefix.pch";
@@ -627,11 +757,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4C9C19A0BB51C7109BFC8C89EC3F70 /* Build configuration list for PBXNativeTarget "Pods-CaffineNearMe" */ = {
+		62BFDFC26E6BB8C9B4F45803C30F2489 /* Build configuration list for PBXNativeTarget "Pods-CaffeineNearMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E880CC804F970757FF844145544DE9BF /* Debug */,
-				92C0984E5699C9D37B4A1E9468053493 /* Release */,
+				6F8FCF14603EDBDED97A55222604DCA4 /* Debug */,
+				A5E35E315CDF13B44BEA20E522EB8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2CBF2A6B682FB5E7EAA2CE28264B44 /* Debug */,
+				C550302C2133243B83B7191844429167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

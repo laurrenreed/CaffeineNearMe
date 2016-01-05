@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Foursquare-API-v2/Foursquare2.h>
+#import <MBProgressHud/MBProgressHUD.h>
 
 @interface LERSearchViewController : UIViewController
 

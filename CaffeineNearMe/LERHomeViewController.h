@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foursquare-API-v2/Foursquare2.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MBProgressHud/MBProgressHud.h>
 
 @interface LERHomeViewController : UIViewController
 

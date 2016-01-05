@@ -65,6 +65,7 @@
         [self.tableView reloadData];
     }
 //    [self geoCodeLocationFromString:query];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [self getVenuesFromFoursquareWithName:query];
 }
 
@@ -107,8 +108,7 @@
                                         
                                         self.venues = venueDic[@"response"][@"venues"];
                                         [self.tableView reloadData];
-
-                                        NSLog(@"venuedic %@", venueDic);
+                                        [MBProgressHUD hideHUDForView:self.view animated:YES];
                                         }
                                     }];
                                     
