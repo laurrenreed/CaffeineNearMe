@@ -33,7 +33,8 @@
     [super viewDidLoad];
 
     self.navigationController.navigationBar.alpha = 0.75;
-    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonSystemItemDone target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
     self.mapView.delegate = self;
     
     self.coffeeShopName.text = self.coffeeShopDetails.name;

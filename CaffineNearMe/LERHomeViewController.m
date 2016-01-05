@@ -22,6 +22,7 @@
 @property (nonatomic, assign) CGFloat latitude;
 @property (nonatomic, assign) CGFloat longitude;
 @property (weak, nonatomic) IBOutlet UILabel *userCurrentLocationLabel;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 
 @end
 
@@ -29,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"Caffeine Near Me";
     
     self.locationManager = [[CLLocationManager alloc] init];
     
@@ -47,6 +50,35 @@
     self.coffeeShopListTableView.delegate = self;
     self.coffeeShopListTableView.dataSource = self;
     self.coffeeShopListTableView.backgroundColor = [UIColor clearColor];
+    
+    UITableViewController *tableViewController = [[UITableViewController alloc] init];
+    tableViewController.tableView = self.coffeeShopListTableView;
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.backgroundColor = [UIColor darkGrayColor];
+    self.refreshControl.tintColor = [UIColor whiteColor];
+    [self.refreshControl addTarget:self action:@selector(handleRefresh) forControlEvents:UIControlEventValueChanged];
+    [self.coffeeShopListTableView addSubview:self.refreshControl];
+}
+
+- (void)handleRefresh {
+    //TODO: check to see if it actually works to change current location
+    [[self locationManager] startUpdatingLocation];
+    [self.coffeeShopListTableView reloadData];
+    if (self.refreshControl) {
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"MMM d, h:mm a"];
+        NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
+        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
+                                                                    forKey:NSForegroundColorAttributeName];
+        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
+        self.refreshControl.attributedTitle = attributedTitle;
+        
+        [self.refreshControl endRefreshing];
+    }
+    
+    
 }
 
 - (void)reverseGeocodeforLocation:(CLLocation *)location {
