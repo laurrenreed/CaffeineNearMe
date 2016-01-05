@@ -7,6 +7,8 @@
 //
 
 #import "LERCoffeeShopViewController.h"
+#import "LERCustomAnnotation.h"
+
 #define METERS_PER_MILE 1609.344
 @interface LERCoffeeShopViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *coffeeShopName;
@@ -74,21 +76,39 @@
     zoomLocation.longitude = [self.coffeeShopDetails.longitude floatValue];
     
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
-    
     [_mapView setRegion:viewRegion animated:YES];
     
-    CLLocationCoordinate2D annotationCoord;
+//    coffeeShopLocation.coordinate = annotationCoord;
+//    coffeeShopLocation.title = self.coffeeShopDetails.name;
+//    
+//    [self.mapView addAnnotation:coffeeShopLocation];
+    LERCustomAnnotation *coffeeShopPin = [[LERCustomAnnotation alloc] initWithTitle:nil subtitle:nil venue:nil location:zoomLocation];
     
-    MKPointAnnotation *coffeeShopLocation = [MKPointAnnotation new];
-    annotationCoord.latitude = [self.coffeeShopDetails.latitude floatValue];
-    annotationCoord.longitude = [self.coffeeShopDetails.longitude floatValue];
-    
-    coffeeShopLocation.coordinate = annotationCoord;
-    coffeeShopLocation.title = self.coffeeShopDetails.name;
-    
-    [self.mapView addAnnotation:coffeeShopLocation];
+    [self.mapView addAnnotation:coffeeShopPin];
     
 }
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    
+    if ([annotation isKindOfClass:[LERCustomAnnotation class]]) {
+        
+        LERCustomAnnotation *userLocation = (LERCustomAnnotation *)annotation;
+        MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"customCoffeeAnnotation"];
+        
+        if (annotationView == nil) {
+            annotationView = userLocation.annotationView;
+            
+        } else {
+            annotationView.annotation = annotation;
+            
+        }
+        
+        return annotationView;
+    }
+    
+    return nil;
+}
+
 - (IBAction)phoneNumber:(id)sender {
     
     NSString *phoneNumber = [NSString stringWithFormat:@"%@", self.coffeeShopDetails.phoneNumber];

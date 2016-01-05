@@ -36,7 +36,7 @@
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoLight];
 
     UIImage *coffeeIcon = [IonIcons imageWithIcon:ion_coffee
-                                             size:30.0f
+                                             size:35.0f
                                             color:[UIColor darkGrayColor]];
     
     annotationView.image = coffeeIcon;
