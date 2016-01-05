@@ -3,18 +3,19 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'CaffineNearMe' do
+target 'CaffeineNearMe' do
 
-  pod 'Foursquare-API-v2', '~> 1.4.8'
-  pod 'ionicons'
-
-end
-
-target 'CaffineNearMeTests' do
+pod 'ionicons'
+pod 'Foursquare-API-v2', '~> 1.4.8'
+pod 'MBProgressHUD', '~> 0.9.2'
 
 end
 
-target 'CaffineNearMeUITests' do
+target 'CaffeineNearMeTests' do
+
+end
+
+target 'CaffeineNearMeUITests' do
 
 end
 

@@ -1,5 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Foursquare-API-v2" "${PODS_ROOT}/Headers/Public/ionicons"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Foursquare-API-v2" -isystem "${PODS_ROOT}/Headers/Public/ionicons"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Foursquare-API-v2" -l"ionicons" -framework "Foundation" -framework "Security" -framework "UIKit"
-PODS_ROOT = ${SRCROOT}/Pods

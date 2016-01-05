@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d20-Ma-Xla">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="h3y-Sy-76g">
+            <objects>
+                <viewController id="d20-Ma-Xla" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Crq-E3-e8E"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Oj-Vz-L9n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ih8-ei-41T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="1cY-5N-2VO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1cY-5N-2VO" firstAttribute="top" secondItem="Crq-E3-e8E" secondAttribute="bottom" constant="-20" id="72I-kt-mtb"/>
+                            <constraint firstItem="1cY-5N-2VO" firstAttribute="leading" secondItem="Ih8-ei-41T" secondAttribute="leadingMargin" constant="-20" id="HnU-Rl-bSW"/>
+                            <constraint firstItem="2Oj-Vz-L9n" firstAttribute="top" secondItem="1cY-5N-2VO" secondAttribute="bottom" id="gUK-3B-hR1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1cY-5N-2VO" secondAttribute="trailing" constant="-20" id="hDZ-St-the"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWN-Mx-Isx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchImage" width="459" height="685"/>
+    </resources>
+</document>
